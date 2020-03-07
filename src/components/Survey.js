@@ -1,19 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./stylesheets/Survey.scss";
-<<<<<<< HEAD
 import frame from "./images/frame.svg";
 
 const Survey = props => (
   <section id="survey" className="survey-section">
-    <img src={frame} alt="frame" classApp="App-frame" />
-=======
-import frame from "./frame.svg";
-
-const Survey = props => (
-  <section id="survey" className="survey-section">
-    <img src={frame} alt="frame" className="App-frame" />
->>>>>>> survey
+    <img src={frame} alt="frame" className="frame" />
     <div className="survey-title-description">
       <div className="survey-title">
         <h1>Feelings about Extinction</h1>
@@ -125,38 +117,22 @@ const Survey = props => (
         <div>
           <input type="checkbox" id="second-checkbox" value="checkbox-1" />
 
-<<<<<<< HEAD
-          <label for="first">Yes please, love news and updates!</label>
-=======
           <label for="second">Yes please, love news and updates!</label>
->>>>>>> survey
         </div>
         <div>
           <input type="checkbox" id="third-checkbox" value="checkbox-1" />
 
-<<<<<<< HEAD
-          <label for="first">Maybe a good idea.</label>
-=======
           <label for="third">Maybe a good idea.</label>
->>>>>>> survey
         </div>
         <div>
           <input type="checkbox" id="fourth-checkbox" value="checkbox-1" />
 
-<<<<<<< HEAD
-          <label for="first">I will probably oversleep them anyway...</label>
-=======
           <label for="fourth">I will probably oversleep them anyway...</label>
->>>>>>> survey
         </div>
         <div>
           <input type="checkbox" id="fifth-checkbox" value="checkbox-1" />
 
-<<<<<<< HEAD
-          <label for="first">No! I don't care.</label>
-=======
           <label for="fifth">No! I don't care.</label>
->>>>>>> survey
         </div>
       </div>
     </div>
