@@ -14,12 +14,17 @@ const texts = [
   }
 ];
 
+Array.prototype.sample = function() {
+  return this[Math.floor(Math.random() * this.length)];
+};
+
 const Ticker = () => (
   <main className="ticker-wrap w-100">
     <div className="ticker">
       {texts.map(item => (
         <TickerItem key={item.text} text={item.text} />
       ))}
+      [1,2,3,4].sample()
     </div>
   </main>
 );
