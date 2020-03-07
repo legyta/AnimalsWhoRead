@@ -1,0 +1,290 @@
+/* COLORS */
+$red: #f72143;
+$intense-blue: #1f33f6;
+$light-green: #c6ecc7;
+$dark-blue: #101b5f;
+$light-orange: #f0a56b;
+$orange: #f85f28;
+$green: #1e8059;
+$pink: #e57a9b;
+/* FONT FAMILY */
+$font: "Roboto";
+/* FONT WEIGHTS */
+$light: 300;
+$medium: 500;
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
+
+img {
+  height: 20%;
+  width: 20%;
+  margin: 2rem 2rem;
+}
+
+.survey-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $dark-blue;
+  font-family: $font;
+}
+
+.survey-title-description {
+  .survey-title-description {
+    padding: 1rem 1rem;
+  }
+
+  .survey-title h1 {
+    font-size: 1.7rem;
+    font-weight: $medium;
+    color: $light-orange;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .survey-p {
+    color: $pink;
+    font-weight: $medium;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+// Font size on Laptops
+@media screen and (min-width: 1025px) and (max-width: 1824px) {
+  .surevy-title-description .title h1 {
+    font-size: 3rem;
+  }
+
+  .survey-description p {
+    font-size: 2rem;
+  }
+}
+
+.survey-contact {
+  .survey-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .age {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #name {
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  #email-input {
+    margin: 0 0.74rem;
+    font-size: 0.8rem;
+  }
+
+  #number {
+    margin: 0 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+    color: $light-green;
+    margin: 0 1 0;
+  }
+}
+
+// Font size on Laptops
+@media screen and (min-width: 1025px) and (max-width: 1824px) {
+  .survey-contact label {
+    font-size: 1.2rem;
+  }
+
+  .contact #name {
+    font-size: 1rem;
+  }
+
+  .contact #email-input {
+    font-size: 1rem;
+  }
+
+  .contact #number {
+    font-size: 1rem;
+
+    margin: 0 0.3rem;
+  }
+}
+
+.dropdown-list {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .dropdown-list {
+    width: 35%;
+  }
+}
+
+/* Logo on laptops (nav bar)*/
+
+@media screen and (min-width: 1025px) and (max-width: 1824px) {
+  .dropdown-list {
+    width: 26%;
+  }
+}
+
+.dropdown-list {
+  label {
+    font-size: 1rem;
+    color: $light-green;
+  }
+
+  #dropdown {
+    font-size: 0.8rem;
+  }
+}
+
+/* Logo on laptops (nav bar)*/
+
+@media screen and (min-width: 1025px) and (max-width: 1824px) {
+  .dropdown-list {
+    label {
+      font-size: 1.2rem;
+    }
+
+    #dropdown {
+      font-size: 1rem;
+    }
+  }
+}
+
+.radio-list {
+  #radio-title {
+    margin: 2rem;
+    color: $light-green;
+    font-size: 1rem;
+  }
+
+  .choices {
+    margin: 0 2rem;
+    font-size: 0.8rem;
+  }
+
+  input[type="radio"] {
+    box-sizing: border-box;
+    margin: 0.6rem;
+  }
+}
+
+/* Logo on laptops (nav bar)*/
+
+@media screen and (min-width: 1025px) and (max-width: 1824px) {
+  .radio-list {
+    #radio-title {
+      font-size: 1.2rem;
+    }
+
+    .choices {
+      font-size: 1rem;
+    }
+  }
+}
+
+.checkbox-list {
+  #checkbox-title {
+    margin: 2rem;
+    font-size: 1.2rem;
+    color: $light-green;
+    font-size: 1rem;
+  }
+
+  .choices-checkbox {
+    margin: 0 2rem;
+    font-size: 0.8rem;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box;
+    margin: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1824px) {
+  .checkbox-list {
+    #checkbox-title {
+      font-size: 1.2rem;
+    }
+
+    .choices-checkbox {
+      font-size: 1rem;
+    }
+  }
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#comment-title {
+  font-size: 1rem;
+  color: $light-green;
+  margin: 1.2rem;
+}
+
+.comment-text {
+  width: 80%;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1824px) {
+  #comment-title {
+    font-size: 1.2rem;
+  }
+
+  .comment-text {
+    font-size: 1rem;
+  }
+}
+
+button {
+  color: $dark-blue;
+  background-color: $light-green;
+  margin: 1rem;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1824px) {
+  button {
+    font-size: 1rem;
+  }
+}
+
+#submit:hover {
+  color: $dark-blue;
+  background-color: $light-orange;
+}
+
+.active-article__button {
+  margin: 0 0 1rem;
+}
