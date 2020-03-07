@@ -16,7 +16,13 @@ $medium: 500;
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
 
 img {
+<<<<<<< HEAD
   height: 60%;
+=======
+  height: 20%;
+  width: 20%;
+  margin: 2rem 2rem;
+>>>>>>> survey
 }
 
 .survey-section {
@@ -184,6 +190,14 @@ img {
     margin: 0 2rem;
     font-size: 0.8rem;
   }
+<<<<<<< HEAD
+=======
+
+  input[type="radio"] {
+    box-sizing: border-box;
+    margin: 0.6rem;
+  }
+>>>>>>> survey
 }
 
 /* Logo on laptops (nav bar)*/
@@ -212,6 +226,15 @@ img {
     margin: 0 2rem;
     font-size: 0.8rem;
   }
+<<<<<<< HEAD
+=======
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    box-sizing: border-box;
+    margin: 0.6rem;
+  }
+>>>>>>> survey
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1824px) {
