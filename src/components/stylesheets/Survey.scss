@@ -15,22 +15,11 @@ $medium: 500;
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
 
-.survey--img {
-  height: 20vh;
-  width: 50%;
-  margin-top: 7%;
-  margin-bottom: 7%;
+img {
+  height: 60%;
 }
 
-/*
-@media screen and (max-width: 768px) {
-  .survey--img {
-    height: 20vh;
-    width: 50%;
-  }
-}
-*/
-.survey-body {
+.survey-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -39,18 +28,22 @@ $medium: 500;
   font-family: $font;
 }
 
-.title-description {
-  .title-description {
+.survey-title-description {
+  .survey-title-description {
     padding: 1rem 1rem;
   }
 
-  .title h1 {
-    font-size: 4vw;
+  .survey-title h1 {
+    font-size: 1.7rem;
     font-weight: $medium;
-    color: $light-orange !important;
+    color: $light-orange;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
-  p {
+  .survey-p {
     color: $pink;
     font-weight: $medium;
     font-size: 0.9rem;
@@ -61,19 +54,19 @@ $medium: 500;
   }
 }
 
-// Title size on Laptops
+// Font size on Laptops
 @media screen and (min-width: 1025px) and (max-width: 1824px) {
-  .title-description .title h1 {
+  .surevy-title-description .title h1 {
     font-size: 3rem;
   }
 
-  .description p {
+  .survey-description p {
     font-size: 2rem;
   }
 }
 
-.contact--survey {
-  .name {
+.survey-contact {
+  .survey-name {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -113,9 +106,9 @@ $medium: 500;
   }
 }
 
-// Name form size on Laptops
+// Font size on Laptops
 @media screen and (min-width: 1025px) and (max-width: 1824px) {
-  .contact label {
+  .survey-contact label {
     font-size: 1.2rem;
   }
 
@@ -141,18 +134,13 @@ $medium: 500;
   margin: 1rem;
 }
 
-//Drop-down list on ipads and laptops
-@media screen and (min-width: 684px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .dropdown-list {
-    width: 15%;
+    width: 35%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .dropdown-list {
-    width: 25%;
-  }
-}
+/* Logo on laptops (nav bar)*/
 
 @media screen and (min-width: 1025px) and (max-width: 1824px) {
   .dropdown-list {
@@ -171,7 +159,7 @@ $medium: 500;
   }
 }
 
-/* Labels for dropdown list on laptops */
+/* Logo on laptops (nav bar)*/
 
 @media screen and (min-width: 1025px) and (max-width: 1824px) {
   .dropdown-list {
@@ -192,46 +180,13 @@ $medium: 500;
     font-size: 1rem;
   }
 
-  .choices-radio {
+  .choices {
     margin: 0 2rem;
-  }
-
-  .firstCheck {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .secondCheck {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .thirdCheck {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .fourthCheck {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .fifthCheck {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    font-size: 0.8rem;
   }
 }
 
-/* Radio list on laptops */
+/* Logo on laptops (nav bar)*/
 
 @media screen and (min-width: 1025px) and (max-width: 1824px) {
   .radio-list {
@@ -259,7 +214,6 @@ $medium: 500;
   }
 }
 
-//Checkbox list on laptops
 @media screen and (min-width: 1025px) and (max-width: 1824px) {
   .checkbox-list {
     #checkbox-title {
@@ -268,7 +222,6 @@ $medium: 500;
 
     .choices-checkbox {
       font-size: 1rem;
-      margin: 0 1;
     }
   }
 }
@@ -291,7 +244,6 @@ $medium: 500;
   font-size: 0.8rem;
 }
 
-//Comment title on laptops
 @media screen and (min-width: 1025px) and (max-width: 1824px) {
   #comment-title {
     font-size: 1.2rem;
@@ -309,7 +261,6 @@ button {
   font-size: 0.8rem;
 }
 
-//button on laptops
 @media screen and (min-width: 1025px) and (max-width: 1824px) {
   button {
     font-size: 1rem;
@@ -323,26 +274,4 @@ button {
 
 .active-article__button {
   margin: 0 0 1rem;
-}
-
-/* BIRTE */
-
-.dropdown-list #dropdown {
-  font-size: 0.9rem;
-  color: $pink;
-}
-
-.dropdown-list label {
-  font-size: 1.4rem;
-  color: #c6ecc7;
-  margin-top: 15%;
-}
-
-label {
-  display: inline-block;
-  color: $light-green;
-}
-
-.choices {
-  width: 50%;
 }

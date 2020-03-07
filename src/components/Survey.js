@@ -4,19 +4,21 @@ import "./stylesheets/Survey.scss";
 import frame from "./images/frame.svg";
 
 const Survey = props => (
-  <section id="survey" className="survey-body">
-    <img className="survey--img" src={frame} alt="frame" />
-    <div className="title-description">
-      <div className="title">
+  <section id="survey" className="survey-section">
+    <img src={frame} alt="frame" classApp="App-frame" />
+    <div className="survey-title-description">
+      <div className="survey-title">
         <h1>Feelings about Extinction</h1>
       </div>
       <div className="description">
-        <p>Greetings to animals sharing their feelings here</p>
+        <p className="survey-p">
+          Greetings to animals sharing their feelings here
+        </p>
       </div>
     </div>
-    <div className="contact--survey">
-      <div className="name">
-        <label htmlFor="name" id="name-label">
+    <div className="survey-contact">
+      <div className="survey-name">
+        <label for="name" id="name-label">
           How are you called
         </label>
 
@@ -30,7 +32,7 @@ const Survey = props => (
       </div>
       {/* email  */}
       <div className="email">
-        <label htmlFor="email" id="email-label">
+        <label for="email" id="email-label">
           What is your email
         </label>
 
@@ -44,7 +46,7 @@ const Survey = props => (
       </div>
       {/* age */}
       <div className="age">
-        <label htmlFor="number" id="number-label">
+        <label for="number" id="number-label">
           Years on the planet
         </label>
 
@@ -77,74 +79,69 @@ const Survey = props => (
         <option value="fifth-choice">Prefer not to answer.</option>
       </select>
     </div>
-
     <div className="radio-list">
       <label id="radio-title">Do you know how big is your species?</label>
-      <div className="choices-radio">
+      <div className="choices">
         <div className="firstCheck">
           <input type="radio" id="first" name="name" />
-          <label htmlFor="first">Only few of us left...</label>
+          <label for="first">Only few of us left...</label>
         </div>
         <div className="secondCheck">
           <input type="radio" id="second" name="name" />
-          <label htmlFor="second">I think around 736,239</label>
+          <label for="second">I think around 736,239</label>
         </div>
         <div className="thirdCheck">
           <input type="radio" id="third" name="name" />
-          <label htmlFor="third">We are the whole continent!</label>
+          <label for="third">We are the whole continent!</label>
         </div>
         <div className="fourthCheck">
           <input type="radio" id="fourth" name="name" />
-          <label htmlFor="fourth">Never been good at maths...</label>
+          <label for="fourth">Never been good at maths...</label>
         </div>
         <div className="fifthCheck">
           <input type="radio" id="fifth" name="name" />
-          <label htmlFor="fifth">I don't want to disclose this</label>
+          <label for="fifth">I don't want to disclose this</label>
         </div>
       </div>
     </div>
-
     <div className="checkbox-list">
       <label id="checkbox-title">Do you want extinction updates?</label>
       <div className="choices-checkbox">
         <div>
           <input type="checkbox" id="first-checkbox" value="checkbox-1" />
 
-          <label htmlFor="first">
+          <label for="first">
             Yes! If you can you deliver in my local river.
           </label>
         </div>
         <div>
           <input type="checkbox" id="first-checkbox" value="checkbox-1" />
 
-          <label htmlFor="first">Yes please, love news and updates!</label>
+          <label for="first">Yes please, love news and updates!</label>
         </div>
         <div>
           <input type="checkbox" id="first-checkbox" value="checkbox-1" />
 
-          <label htmlFor="first">Maybe a good idea.</label>
+          <label for="first">Maybe a good idea.</label>
         </div>
         <div>
           <input type="checkbox" id="first-checkbox" value="checkbox-1" />
 
-          <label htmlFor="first">
-            I will probably oversleep them anyway...
-          </label>
+          <label for="first">I will probably oversleep them anyway...</label>
         </div>
         <div>
           <input type="checkbox" id="first-checkbox" value="checkbox-1" />
 
-          <label htmlFor="first">No! I don't care.</label>
+          <label for="first">No! I don't care.</label>
         </div>
       </div>
     </div>
     <div className="comment">
       <label id="comment-title">If you can actually type, leave message</label>
 
-      <textarea
-        className="comment-text"
-        placeholder="here you can leave your comments and advice"
-      ></textarea>
+      <textarea className="comment-text">
+        here you can leave your comments and advices
+      </textarea>
     </div>
 
     <button type="submit" id="submit">
