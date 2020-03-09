@@ -6,7 +6,8 @@ import frame from "./images/frame.svg";
 const Survey = props => (
   <section id="survey" className="survey-section">
     <img src={frame} alt="frame" className="frame" />
-    <div className="survey-title-description container">
+
+    <div className="survey-title-description">
       <div className="survey-title">
         <h1>Feelings about Extinction</h1>
       </div>
@@ -18,13 +19,13 @@ const Survey = props => (
     </div>
     <div className="survey-contact">
       <div className="survey-name">
-        <label for="name" id="name-label">
+        <label for="text" id="name-label">
           How are you called
         </label>
 
         <input
           className="surveyContact-input"
-          type="text"
+          type="survey-text"
           id="survey-name"
           name="name"
           placeholder="your species name"
@@ -39,7 +40,7 @@ const Survey = props => (
 
         <input
           className="surveyContact-input"
-          type="email"
+          type="survey-email"
           id="email-input"
           name="email"
           placeholder="if you have one"
@@ -54,7 +55,7 @@ const Survey = props => (
 
         <input
           className="surveyContact-input"
-          type="number"
+          type="survey-number"
           id="number"
           name="number"
           placeholder="age"

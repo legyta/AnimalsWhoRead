@@ -24,7 +24,6 @@ const Ticker = () => (
       {texts.map(item => (
         <TickerItem key={item.text} text={item.text} />
       ))}
-      [1,2,3,4].sample()
     </div>
   </main>
 );
