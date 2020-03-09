@@ -6,7 +6,7 @@ import frame from "./images/frame.svg";
 const Survey = props => (
   <section id="survey" className="survey-section">
     <img src={frame} alt="frame" className="frame" />
-    <div className="survey-title-description">
+    <div className="survey-title-description container">
       <div className="survey-title">
         <h1>Feelings about Extinction</h1>
       </div>
@@ -23,20 +23,22 @@ const Survey = props => (
         </label>
 
         <input
+          className="surveyContact-input"
           type="text"
-          id="name"
+          id="survey-name"
           name="name"
           placeholder="your species name"
           required
         />
       </div>
       {/* email  */}
-      <div className="email">
+      <div className="survey-email">
         <label for="email" id="email-label">
           What is your email
         </label>
 
         <input
+          className="surveyContact-input"
           type="email"
           id="email-input"
           name="email"
@@ -45,12 +47,13 @@ const Survey = props => (
         />
       </div>
       {/* age */}
-      <div className="age">
+      <div className="survey-age">
         <label for="number" id="number-label">
           Years on the planet
         </label>
 
         <input
+          className="surveyContact-input"
           type="number"
           id="number"
           name="number"
@@ -61,8 +64,10 @@ const Survey = props => (
       </div>
     </div>
     <div className="dropdown-list">
-      <label id="dropdown-title">How do you feel about Extinction?</label>
-      <select id="dropdown">
+      <label className="dropdown-title">
+        How do you feel about Extinction?
+      </label>
+      <select className="dropdown">
         <option value="current">Choose what you relate most to</option>
         <option value="first-choice">
           I am very afraid! I already store food and think of new possible
@@ -80,7 +85,9 @@ const Survey = props => (
       </select>
     </div>
     <div className="radio-list">
-      <label id="radio-title">Do you know how big is your species?</label>
+      <label className="radio-title">
+        Do you know how big is your species?
+      </label>
       <div className="choices">
         <div className="firstCheck">
           <input type="radio" id="first" name="name" />
@@ -105,14 +112,12 @@ const Survey = props => (
       </div>
     </div>
     <div className="checkbox-list">
-      <label id="checkbox-title">Do you want extinction updates?</label>
+      <label className="checkbox-title">Do you want extinction updates?</label>
       <div className="choices-checkbox">
         <div className="firstTick">
           <input type="checkbox" id="first-checkbox" value="checkbox-1" />
 
-          <label for="first">
-            Yes! If you can you deliver in my local river.
-          </label>
+          <label for="first">If you can you deliver to my local river!</label>
         </div>
         <div>
           <input type="checkbox" id="second-checkbox" value="checkbox-1" />
@@ -137,14 +142,17 @@ const Survey = props => (
       </div>
     </div>
     <div className="comment">
-      <label id="comment-title">If you can actually type, leave message</label>
+      <label className="comment-title">
+        If you can actually type, leave message
+      </label>
 
-      <textarea className="comment-text">
-        here you can leave your comments and advices
-      </textarea>
+      <textarea
+        className="comment-text"
+        placeholder="here you can leave your comments and advices"
+      ></textarea>
     </div>
 
-    <button type="submit" id="submit">
+    <button className="survey-button" type="submit" id="submit">
       Send your Form
     </button>
     <button className="active-article__button">
