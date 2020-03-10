@@ -30,6 +30,5 @@ function Header({ handleChange, handleUserInput }) {
     </main>
   );
 }
-// <img src={logo} className="App-logo" alt="logo" />
 
 export default Header;

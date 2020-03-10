@@ -16,9 +16,10 @@ $medium: 500;
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
 
 .frame {
-  height: 20%;
-  width: 20%;
-  margin: 2rem 2rem;
+  height: 15%;
+  width: 15%;
+  margin: 3vw 38vw;
+  margin-top: 5%;
 }
 
 .survey-section {
@@ -29,23 +30,73 @@ $medium: 500;
 }
 
 .survey-title h1 {
-  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
   margin: 1rem 0 2rem 0;
+}
+
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//   .active-article__button {
+//     width: 20%;
+//   }
+// }
+
+// @media screen and (min-width: 415px) and (max-width: 768px) {
+//   .active-article__button {
+//     width: 25%;
+//   }
+// }
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .survey-title h1 {
+    font-size: 2rem;
+    margin: 0 0;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .survey-title h1 {
+    font-size: 1.8rem;
+    margin: 0 0;
+  }
 }
 
 .survey-p {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2vw;
   color: $light-orange;
   display: flex;
   justify-content: center;
   margin: 1rem 0 2rem 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .survey-p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .survey-p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .survey-p {
+    font-size: 1rem;
+  }
+}
+
 .survey-contact {
   color: $light-orange;
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .survey-name {
@@ -73,16 +124,22 @@ $medium: 500;
 input[type="survey-text"] {
   margin-top: 0rem;
   padding: 0 0 0 0;
+  color: #e57a9b;
+  font-size: 1.2rem;
 }
 
 input[type="survey-number"] {
   margin-top: 0rem;
   padding: 0 0;
+  color: #e57a9b;
+  font-size: 1.2rem;
 }
 
 input[type="survey-email"] {
   margin-top: 0.5rem;
   padding: 0 0;
+  color: #e57a9b;
+  font-size: 1.2rem;
 }
 
 .surveyContact-input {
@@ -104,6 +161,109 @@ input[type="survey-email"] {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .surveyContact-input {
+    width: 50%;
+  }
+
+  #name-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #email-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #number-label {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .survey-contact {
+    font-size: 1.1rem;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+
+  input[type="survey-text"] {
+    font-size: 1rem;
+  }
+
+  input[type="survey-number"] {
+    font-size: 1rem;
+  }
+
+  input[type="survey-email"] {
+    font-size: 1rem;
+  }
+
+  .surveyContact-input {
+    width: 50%;
+  }
+
+  #name-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #email-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #number-label {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .survey-contact {
+    font-size: 1rem;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+
+  input[type="survey-text"] {
+    font-size: 1rem;
+  }
+
+  input[type="survey-number"] {
+    font-size: 1rem;
+  }
+
+  input[type="survey-email"] {
+    font-size: 1rem;
+  }
+
+  .surveyContact-input {
+    width: 50%;
+  }
+
+  #name-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #email-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #number-label {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
 .dropdown-list {
   display: flex;
   justify-content: center;
@@ -118,24 +278,35 @@ input[type="survey-email"] {
 }
 
 .dropdown {
-  width: 50%;
+  width: 45%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .dropdown {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .dropdown {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .dropdown {
+    width: 65%;
+  }
 }
 
 .radio-title {
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 1rem 1rem 0;
   font-size: 1.2rem;
   color: $light-orange;
 }
 
 .choices {
-  display: flex;
-  flex-direction: column;
   color: $light-green;
-}
-
-.first-check {
-  display: flex;
-  flex-direction: row;
 }
 
 input {
@@ -152,11 +323,6 @@ input {
   display: flex;
   flex-direction: column;
   color: $light-green;
-}
-
-.firstTick {
-  display: flex;
-  flex-direction: row;
 }
 
 .comment {
@@ -177,6 +343,8 @@ input {
 .comment-text {
   width: 80%;
   margin: 0 0 2rem 0;
+  color: $pink;
+  font-size: 1.2rem;
 }
 
 .survey-button {
@@ -209,5 +377,50 @@ input {
 @media screen and (min-width: 375px) and (max-width: 414px) {
   .active-article__button {
     width: 35%;
+  }
+}
+
+.survey-footer {
+  background-color: $pink;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.survey-footer p {
+  color: $light-green;
+  font-size: 1.3rem;
+  padding-left: 10%;
+  line-height: 1.4rem;
+  width: 50%;
+  font-weight: $medium;
+}
+
+.survey-footer span {
+  font-size: 0.9rem;
+  padding-left: 10%;
+  color: $dark-blue;
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .survey-footer {
+    height: 20vh;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .survey-footer {
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .survey-footer {
+    height: 20vh;
   }
 }

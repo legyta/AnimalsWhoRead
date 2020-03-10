@@ -31,11 +31,131 @@ body {
   margin: 2rem 2rem;
 }
 
+.fun-animals {
+  color: $light-orange;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.arrow-fun {
+  position: relative;
+  bottom: -2rem;
+  width: 2%;
+  height: 2%;
+  background-size: contain;
+}
+
+.all-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.arrow-fun {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+// #mission {
+//   background-color: $dark-blue;
+//   border-width: 1.25vw;
+//   height: 93vh;
+// }
+
+// @media screen and (max-width: 700px) {
+//   #mission {
+//     height: 70vh;
+//   }
+// }
+
+.frame--fun:nth-child(1) {
+  // width: calc(100% - 16vw);
+  // height: calc(100% - 16vw);
+  height: 90vw;
+  width: 90vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 8vw;
+  z-index: 2;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-image-source: linear-gradient(
+    40deg,
+    rgb(229, 122, 155) 0%,
+    rgb(16, 27, 95) 40%,
+    rgb(16, 27, 95) 60%,
+    rgb(198, 236, 199) 100%
+  );
+  border-image-slice: 1;
+  opacity: 1;
+  border-width: 1.25vw;
+  border-style: solid;
+  border-color: initial;
+  transition: opacity 0.6s ease-out 0.6s;
+}
+
+@media screen and (max-width: 900px) {
+  .frame--fun:nth-child(1) {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .frame--fun:nth-child(1) {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section:nth-child(1) {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section:nth-child(1) {
+    height: 60vh;
+  }
+}
+
+// @media screen and (max-width: 900px) {
+//   .col-md-4 {
+//     -ms-flex: 0 0 100%;
+//     flex: 0 0 100%;
+//     max-width: 100%;
+//     align-self: flex-start;
+//     top: -60px;
+//   }
+// }
+
 .gif {
-  padding-top: 30px;
-  padding-bottom: 70px;
+  //padding-top: 30px;
+  //padding-bottom: 70px;
   background-color: $dark-blue;
   margin-block-start: -1em;
+  padding: 6rem 6rem;
 }
 
 @media screen and (max-width: 400px) and (min-width: 451px) and (max-width: 1024px) {

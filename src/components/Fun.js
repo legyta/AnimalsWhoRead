@@ -13,15 +13,29 @@ import animal4 from "./images/animal4.gif";
 import cat from "./images/cat.gif";
 import giphy from "./images/giphy.gif";
 import octop from "./images/octop.gif";
+import Arrow from "./images/Arrow.svg";
 
 const Fun = props => (
   <section id="fun">
     <header className="header-fun">
       <h1>Animals have Fun !</h1>
     </header>
+
+    <div className="fun-animals">
+      {" "}
+      <p>Here are some animals enjoying their time!</p>
+    </div>
+
+    <div className="all-arrows">
+      <img src={Arrow} alt="arrow" className="arrow-fun" />
+      <img src={Arrow} alt="arrow" className="arrow-fun" />
+      <img src={Arrow} alt="arrow" className="arrow-fun" />
+    </div>
+    {/* <div className="frame--fun"> */}
     <div className="gif">
-      <div className="container">
-        <div className="row">
+      {/* <div className="frame--fun"> */}
+      <div className="row">
+        <div className="frame--fun">
           <div className="col-md-4">
             {" "}
             <img src={giphy} alt="gif" height="350" width="350" />{" "}
@@ -72,6 +86,7 @@ const Fun = props => (
         </div>
       </div>
     </div>
+    {/* </div> */}
     <div className="button-fun">
       <button className="active-article__button">
         <Link to="/">Go Home</Link>
