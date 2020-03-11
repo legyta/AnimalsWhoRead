@@ -60,6 +60,8 @@ body {
 }
 .gifs {
   border: 5px solid $light-orange;
+  width: 350px;
+  height: 300px;
 }
 .button-fun {
   display: flex;
@@ -124,6 +126,9 @@ body {
 }
 .col-md-4 {
   margin-bottom: 20px;
+}
+.row {
+  margin: 5px;
 }
 
 @media screen and (min-width: 900px) and (max-width: 1024px) {
