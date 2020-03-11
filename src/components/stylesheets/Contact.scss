@@ -1,3 +1,4 @@
+$breakpoint-tablet: 768px;
 .creators div {
   display: inline-block;
   font-size: 18pt;
@@ -36,12 +37,12 @@
   box-shadow: 0px 2px 10px #e57a9b;
 }
 .creators div:hover img {
-  width: 170px;
-  height: 170px;
+  width: 160px;
+  height: 160px;
   opacity: 0.2;
 }
 .creators div:hover p {
-  font-size: 22pt;
+  font-size: 20pt;
   opacity: 1;
   color: #1f33f6;
 }
@@ -76,7 +77,7 @@
   font-family: "Roboto";
 }
 #contact .about-paws h1 {
-  color: #c6ecc7;
+  color: #e57a9b;
   font-size: 60pt;
   padding-top: 30px;
   font-family: "Roboto";
@@ -88,7 +89,6 @@
   font-size: 20pt;
   color: #e57a9b;
   font-weight: lighter;
-  padding-top: 100px;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -99,9 +99,166 @@
   color: #e57a9b;
   position: relative;
 }
-
 .button-contact-group {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#mission {
+  background-color: #101b5f;
+  border-width: 1.25vw;
+  height: 93vh;
+}
+#contact .about-paws .contact-p {
+  font-size: 1.3rem;
+}
+#contact {
+  height: 100%;
+}
+.frame--mission--contact {
+  width: calc(100% - 16vw);
+  height: calc(100% - 16vw);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10vw;
+  left: 8vw;
+  z-index: 2;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-image-source: linear-gradient(
+    40deg,
+    #e57a9b 0%,
+    #101b5f 40%,
+    #101b5f 60%,
+    #c6ecc7 100%
+  );
+  border-image-slice: 1;
+  opacity: 1;
+  border-width: 1.25vw;
+  border-style: solid;
+  border-color: initial;
+  transition: opacity 0.6s ease-out 0.6s;
+}
+h1 {
+  z-index: 1000;
+  background: -webkit-linear-gradient(#c6ecc7, #e57a9b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .active-article__button {
+    width: 20%;
+  }
+  .creators div img {
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+  }
+  #contact .about-paws .frame--mission .row .contact-p {
+    font-size: 16pt;
+  }
+  #contact .about-paws h1 {
+    font-size: 30pt;
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .active-article__button {
+    width: 25%;
+  }
+  .creators div img {
+    width: 100px;
+    height: 100px;
+  }
+  #contact .about-paws .frame--mission .row .contact-p {
+    font-size: 10pt;
+  }
+  #contact .about-paws h1 {
+    font-size: 20pt;
+    margin-bottom: 20px;
+    margin-top: 24px;
+  }
+  .creators .persons {
+    padding: 2px;
+    margin: 2px;
+  }
+  .creators {
+    display: flex;
+  }
+  .creators div:hover img {
+    width: 120px;
+    height: 120px;
+    opacity: 0.2;
+  }
+  .contact-links ul li a {
+    font-size: 16pt;
+    margin: 3px;
+  }
+  .contact-links ul {
+    padding-left: 0;
+  }
+  .creators div:hover p {
+    font-size: 14pt;
+    opacity: 1;
+  }
+  .about-paws p {
+    margin-top: 40px;
+  }
+  .frame--mission {
+    width: calc(100% - 10vw);
+    height: calc(100% - 10vw);
+    top: 6vw;
+    left: 6vw;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .active-article__button {
+    width: 25%;
+  }
+  .creators div img {
+    width: 80px;
+    height: 80px;
+  }
+  #contact .about-paws .frame--mission .row .contact-p {
+    font-size: 10pt;
+  }
+  #contact .about-paws h1 {
+    font-size: 20pt;
+    margin-top: 40px;
+  }
+  .creators .persons {
+    padding: 2px;
+    margin: 2px;
+  }
+  .creators {
+    display: flex;
+  }
+  .creators div:hover img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.2;
+  }
+  .contact-links ul li a {
+    font-size: 14pt;
+    margin: 3px;
+  }
+  .contact-links ul {
+    padding-left: 0;
+  }
+  .about-paws p {
+    font-size: 20pt;
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+  }
+  .creators div:hover p {
+    font-size: 12pt;
+    opacity: 1;
+    width: 300px;
+  }
 }

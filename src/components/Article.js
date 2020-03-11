@@ -43,7 +43,7 @@ class Article extends React.Component {
                   <a href={article.url}>{article.url}</a>
                 </span>
               </p>
-              <button className="active-article__button">
+              <button className="active-article__button_goHome">
                 <Link to="/">Go to Home</Link>
               </button>
             </div>

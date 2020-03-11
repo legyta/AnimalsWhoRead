@@ -7,6 +7,7 @@ $light-orange: #f0a56b;
 $orange: #f85f28;
 $green: #1e8059;
 $pink: #e57a9b;
+$white: #ffffff;
 /* FONT FAMILY */
 $font: "Roboto";
 /* FONT WEIGHTS */
@@ -340,6 +341,13 @@ input {
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .comment-title {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
 .comment-text {
   width: 80%;
   margin: 0 0 2rem 0;
@@ -347,6 +355,11 @@ input {
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .comment-text {
+    margin-bottom: 1rem;
+  }
+}
 .survey-button {
   color: $dark-blue;
   background-color: $light-green;
@@ -358,8 +371,46 @@ input {
 }
 
 .active-article__button {
-  margin: 0 0 2rem 0;
+  border-radius: 30px;
   width: 15%;
+  margin: 0 0 2rem 0;
+  color: $white;
+  background-color: $light-orange;
+  max-height: 70px;
+  display: flex;
+  align-items: center;
+  max-width: 22em;
+  position: relative;
+  box-sizing: border-box;
+  background-color: $pink;
+  border-width: 0.7vw;
+  border-style: solid;
+  border-color: initial;
+  transition: opacity 0.6s ease-out 0.6s;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    color: $white;
+    transition: 0.5s;
+    background: linear-gradient(
+      40deg,
+      rgb(229, 122, 155) 0%,
+      rgb(240, 165, 107) 40%,
+      rgb(240, 165, 107) 60%,
+      rgb(30, 128, 89) 100%
+    );
+  }
+}
+
+.active-article__button a {
+  color: $dark-blue;
+  &:hover {
+    text-decoration: none;
+    color: $dark-blue;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -377,6 +428,7 @@ input {
 @media screen and (min-width: 375px) and (max-width: 414px) {
   .active-article__button {
     width: 35%;
+    margin: 2rem 0;
   }
 }
 

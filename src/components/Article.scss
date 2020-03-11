@@ -94,7 +94,7 @@ $border-thin: 3px;
   }
 }
 
-.active-article__button {
+.active-article__button_goHome {
   border-radius: 30px;
   width: 60vw;
   color: $white;
@@ -132,7 +132,7 @@ $border-thin: 3px;
   }
 }
 
-.active-article__button a {
+.active-article__button_goHome a {
   color: $dark-blue;
   &:hover {
     text-decoration: none;
