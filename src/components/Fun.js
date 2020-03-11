@@ -14,9 +14,11 @@ import cat from "./images/cat.gif";
 import giphy from "./images/giphy.gif";
 import octop from "./images/octop.gif";
 import Arrow from "./images/Arrow.svg";
+import NavBar from "./NavBar";
 
 const Fun = props => (
   <section id="fun">
+    <NavBar />
     <header className="header-fun">
       <h1>Animals have Fun !</h1>
     </header>

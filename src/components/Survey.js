@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./stylesheets/Survey.scss";
 import frame from "./images/frame.svg";
+import NavBar from "./NavBar";
 
 function Survey(props) {
   function submitMessage() {
@@ -10,6 +11,7 @@ function Survey(props) {
 
   return (
     <div id="survey" className="survey-section">
+      <NavBar />
       <img src={frame} alt="frame" className="frame" />
       <div className="survey-title-description">
         <div className="survey-title">

@@ -4,10 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import "./stylesheets/Contact.scss";
 import Paw from "./Paw.svg";
+import NavBar from "./NavBar";
 
 function Contact(props) {
   return (
     <div className="contacts-page" id="contact">
+      <NavBar />
       <div className="top-logo-paw">
         <div className="circle--corner-contact-a">
           <img src={Paw} alt="paw" />
