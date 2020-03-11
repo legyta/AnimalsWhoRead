@@ -107,105 +107,110 @@ function Footer(props) {
               </ul>
             </div>
           </div>
-          <div className="persons" id="birte">
-            <div className="avatar">
-              <a
-                href="https://www.instagram.com/birte_spreuer/"
-                target="_blank"
-                alt="birte"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://media-exp1.licdn.com/dms/image/C4D03AQFMKBczCEDnOg/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=xz5y_jm6lAuEKH65FIL9RrWjVNnxqHj7Zq2x_xVSwYY"
+
+          <div className="contact--wrapper_icons">
+            <div className="persons" id="birte">
+              <div className="avatar">
+                <a
+                  href="https://www.instagram.com/birte_spreuer/"
+                  target="_blank"
                   alt="birte"
-                />
-                <p>Birte Spreuer</p>
-              </a>
-            </div>
-            <div className="contact-links">
-              <ul>
-                <li>
-                  <a
-                    id="profile-link"
-                    href="https://github.com/birtman"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    id="instagram"
-                    href="https://www.instagram.com/birte_spreuer/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/birte-spreuer/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://media-exp1.licdn.com/dms/image/C4D03AQFMKBczCEDnOg/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=xz5y_jm6lAuEKH65FIL9RrWjVNnxqHj7Zq2x_xVSwYY"
+                    alt="birte"
+                  />
+                  <p>Birte Spreuer</p>
+                </a>
+              </div>
+              <div className="contact-links">
+                <ul>
+                  <li>
+                    <a
+                      id="profile-link"
+                      href="https://github.com/birtman"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      id="instagram"
+                      href="https://www.instagram.com/birte_spreuer/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      id="linkedin"
+                      href="https://www.linkedin.com/in/birte-spreuer/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="persons">
-            <div className="avatar">
-              <a
-                href="https://www.instagram.com/aigulich7/"
-                target="_blank"
-                alt="aigul"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://media-exp1.licdn.com/dms/image/C5603AQEvBeYja3GbUg/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=SbWYiKQTQv6zXwwvJEhdaueLkAYq-a9L-DuaJEq61DU"
+          <div className="contact--wrapper_icons">
+            <div className="persons">
+              <div className="avatar">
+                <a
+                  href="https://www.instagram.com/aigulich7/"
+                  target="_blank"
                   alt="aigul"
                   rel="noopener noreferrer"
-                />
-                <p>Aigul Imaralieva</p>
-              </a>
-            </div>
-            <div className="contact-links">
-              <ul>
-                <li>
-                  <a
-                    id="profile-link"
-                    href="https://github.com/aigulich"
-                    target="_blank"
+                >
+                  <img
+                    src="https://media-exp1.licdn.com/dms/image/C5603AQEvBeYja3GbUg/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=SbWYiKQTQv6zXwwvJEhdaueLkAYq-a9L-DuaJEq61DU"
+                    alt="aigul"
                     rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    id="instagram"
-                    href="https://www.instagram.com/aigulich7/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/aigul-imaralieva-70a43a155/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+                  />
+                  <p>Aigul Imaralieva</p>
+                </a>
+              </div>
+              <div className="contact-links">
+                <ul>
+                  <li>
+                    <a
+                      id="profile-link"
+                      href="https://github.com/aigulich"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      id="instagram"
+                      href="https://www.instagram.com/aigulich7/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      id="linkedin"
+                      href="https://www.linkedin.com/in/aigul-imaralieva-70a43a155/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

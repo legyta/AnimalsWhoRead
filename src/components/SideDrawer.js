@@ -2,12 +2,12 @@ import React from "react";
 import "./stylesheets/sideDrawer.scss";
 
 const SideDrawer = props => {
-  let drawerClasses = ["side-drawer"];
+  let drawerClasses = "side-drawer";
   if (props.show) {
-    drawerClasses = ["side-drawer", "open"];
+    drawerClasses = "side-drawer open";
   }
   return (
-    <nav className={drawerClasses.join(" ")}>
+    <nav className={drawerClasses}>
       <ul>
         <li>
           <a href="/">Home</a>
