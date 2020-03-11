@@ -3,9 +3,20 @@ import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import "./stylesheets/Contact.scss";
+import Paw from "./Paw.svg";
+
 function Contact(props) {
   return (
     <div className="contacts-page" id="contact">
+      <div className="top-logo-paw">
+        <div className="circle--corner-contact-a">
+          <img src={Paw} alt="paw" />
+        </div>
+        <div className="circle--corner-contact-b">
+          <img src={Paw} alt="paw" />
+        </div>
+      </div>
+
       <div className="about-paws">
         <div>
           <h1 id="about-pawh"> About Paws </h1>

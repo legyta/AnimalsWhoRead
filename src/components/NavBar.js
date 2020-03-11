@@ -1,6 +1,6 @@
 import React from "react";
 import "./stylesheets/navbar.scss";
-import ToggleButton from "./ToggleButton.js";
+import ToggleButton from "../ToggleButton.js
 
 const NavBar = props => (
   <header className="toolbar">

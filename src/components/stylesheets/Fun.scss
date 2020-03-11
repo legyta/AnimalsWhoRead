@@ -58,7 +58,16 @@ body {
 .arrow-fun {
   animation: bounce 2s infinite;
 }
-
+.gifs {
+  border: 5px solid $light-orange;
+  width: 350px;
+  height: 300px;
+}
+.button-fun {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @keyframes bounce {
   0%,
   20%,
@@ -87,17 +96,10 @@ body {
 //   }
 // }
 
-.frame--fun:nth-child(1) {
+.frame--fun {
   // width: calc(100% - 16vw);
   // height: calc(100% - 16vw);
-  height: 90vw;
-  width: 90vw;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 8vw;
-  z-index: 2;
+
   border-image-width: initial;
   border-image-outset: initial;
   border-image-repeat: initial;
@@ -114,64 +116,151 @@ body {
   border-style: solid;
   border-color: initial;
   transition: opacity 0.6s ease-out 0.6s;
+  top: 8vw;
+  left: 10vw;
+}
+.frame--fun p {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 22pt;
+}
+.col-md-4 {
+  margin-bottom: 20px;
+}
+.row {
+  margin: 5px;
 }
 
-@media screen and (max-width: 900px) {
-  .frame--fun:nth-child(1) {
-    height: 80vh;
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .row {
+    margin-left: 10px;
+  }
+
+  .gifs {
+    border: 5px solid $light-orange;
+    width: 220px;
+    height: 190px;
+  }
+
+  .frame--fun {
+    width: calc(100% - 16vw);
+    height: calc(100% - 16vw);
+
+    top: 8vw;
+    left: 8vw;
+  }
+  .frame--fun p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18pt;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .row {
+    margin-left: 2px;
+    margin-right: 1px;
+  }
+  .header-fun h1 {
+    font-size: 3.5rem;
+  }
+  .gifs {
+    border: 5px solid $light-orange;
+    width: 170px;
+    height: 150px;
+  }
 
-@media screen and (max-width: 600px) {
-  .frame--fun:nth-child(1) {
-    height: 60vh;
+  .frame--fun {
+    width: calc(100% - 16vw);
+    height: calc(100% - 16vw);
+
+    top: 8vw;
+    left: 8vw;
+  }
+  .frame--fun p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16pt;
   }
 }
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .header-fun h1 {
+    font-size: 3.2rem;
+  }
+  .gifs {
+    border: 5px solid $light-orange;
+    width: 320px;
+    height: 280px;
+  }
 
-@media screen and (max-width: 900px) {
-  section:nth-child(1) {
-    height: 80vh;
+  .frame--fun {
+    width: calc(100% - 16vw);
+    height: calc(100% - 16vw);
+
+    top: 3vw;
+    left: 3vw;
+  }
+  .frame--fun p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14pt;
+  }
+  .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
+@media screen and (min-width: 376px) and (max-width: 414px) {
+  .header-fun h1 {
+    font-size: 2.4rem;
+  }
+  .gifs {
+    border: 5px solid $light-orange;
+    width: 300px;
+    height: 240px;
+  }
 
-@media screen and (max-width: 600px) {
-  section:nth-child(1) {
-    height: 60vh;
+  .frame--fun {
+    width: calc(100% - 16vw);
+    height: calc(100% - 16vw);
+    top: 3vw;
+    left: 3vw;
+  }
+  .frame--fun p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14pt;
+  }
+  .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
-
-// @media screen and (max-width: 900px) {
-//   .col-md-4 {
-//     -ms-flex: 0 0 100%;
-//     flex: 0 0 100%;
-//     max-width: 100%;
-//     align-self: flex-start;
-//     top: -60px;
-//   }
-// }
-
-.gif {
-  //padding-top: 30px;
-  //padding-bottom: 70px;
-  background-color: $dark-blue;
-  margin-block-start: -1em;
-  padding: 6rem 6rem;
-}
-
-@media screen and (max-width: 400px) and (min-width: 451px) and (max-width: 1024px) {
-  .gif {
-    width: 100%;
+@media screen and (min-width: 200px) and (max-width: 375px) {
+  .header-fun h1 {
+    font-size: 2rem;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .gif {
-    width: 100%;
+  .gifs {
+    border: 5px solid $light-orange;
+    width: 280px;
+    height: 220px;
   }
-}
 
-.button-fun {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .frame--fun {
+    width: calc(100% - 16vw);
+    height: calc(100% - 16vw);
+    top: 3vw;
+    left: 3vw;
+  }
+  .frame--fun p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14pt;
+  }
+  .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
