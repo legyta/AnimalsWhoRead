@@ -151,14 +151,16 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 .circle--corner-contact-a {
-  width: 100px;
+  width: 120px;
   display: inline-block;
   float: left;
+  padding: 5px;
 }
 .circle--corner-contact-b {
-  width: 100px;
+  width: 120px;
   display: inline-block;
   float: right;
+  padding: 5px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -241,23 +243,23 @@ h1 {
   }
   .frame--mission--contact {
     width: calc(100% - 10vw);
-    height: calc(100% - 10vw);
+    height: calc(100% - 2vw);
 
-    top: 6vw;
+    top: 5vw;
     left: 5vw;
   }
   .circle--corner-contact-a {
-    width: 35px;
+    width: 40px;
 
     float: left;
   }
   .circle--corner-contact-b {
-    width: 35px;
+    width: 40px;
 
     float: right;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 414px) {
+@media screen and (min-width: 376px) and (max-width: 414px) {
   .active-article__button {
     width: 25%;
   }
@@ -314,6 +316,67 @@ h1 {
   }
   .circle--corner-contact-b {
     width: 35px;
+
+    float: right;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 375px) {
+  .active-article__button {
+    width: 25%;
+  }
+
+  .creators div img {
+    width: 80px;
+    height: 80px;
+  }
+  #contact .about-paws .frame--mission--contact .row .contact-p {
+    font-size: 10pt;
+  }
+  #contact .about-paws h1 {
+    font-size: 20pt;
+    margin-top: 40px;
+  }
+  .creators .persons {
+    padding: 2px;
+    margin: 2px;
+  }
+  .creators {
+    display: flex;
+  }
+  .creators div:hover img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.2;
+  }
+  .contact-links ul li a {
+    font-size: 14pt;
+
+    margin: 3px;
+  }
+  .contact-links ul {
+    padding-left: 0;
+  }
+  .about-paws p {
+    font-size: 20pt;
+
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+  }
+  .creators div:hover p {
+    font-size: 12pt;
+    opacity: 1;
+    width: 300px;
+  }
+  .circle--corner-contact-a {
+    width: 30px;
+
+    float: left;
+  }
+  .circle--corner-contact-b {
+    width: 30px;
 
     float: right;
   }
