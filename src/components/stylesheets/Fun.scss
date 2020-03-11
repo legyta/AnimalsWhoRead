@@ -7,6 +7,8 @@ $light-orange: #f0a56b;
 $orange: #f85f28;
 $green: #1e8059;
 $pink: #e57a9b;
+$pink: #e57a9b;
+$white: #ffffff;
 /* FONT FAMILY */
 $font: "Roboto";
 /* FONT WEIGHTS */
@@ -84,22 +86,7 @@ body {
   }
 }
 
-// #mission {
-//   background-color: $dark-blue;
-//   border-width: 1.25vw;
-//   height: 93vh;
-// }
-
-// @media screen and (max-width: 700px) {
-//   #mission {
-//     height: 70vh;
-//   }
-// }
-
 .frame--fun {
-  // width: calc(100% - 16vw);
-  // height: calc(100% - 16vw);
-
   border-image-width: initial;
   border-image-outset: initial;
   border-image-repeat: initial;
@@ -263,4 +250,74 @@ body {
     align-items: center;
     justify-content: center;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .active-article__button {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .active-article__button {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .active-article__button {
+    width: 35%;
+    margin: 2rem 0;
+  }
+}
+
+.survey-fun {
+  background-color: $pink;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.survey-fun p {
+  color: $light-green;
+  font-size: 1.3rem;
+  padding-left: 10%;
+  line-height: 1.4rem;
+  width: 50%;
+  font-weight: $medium;
+}
+
+.survey-fun span {
+  font-size: 0.9rem;
+  padding-left: 10%;
+  color: $dark-blue;
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .survey-fun {
+    height: 20vh;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .survey-fun {
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .survey-fun {
+    height: 20vh;
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

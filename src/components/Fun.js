@@ -158,11 +158,26 @@ const Fun = props => (
       </div>
       {/* </div> */}
     </div>
-    <div className="button-fun">
+    <div className="button-wrapper">
       <button className="active-article__button">
         <Link to="/">Go Home</Link>
       </button>
     </div>
+    <footer className="survey-fun">
+      <p>
+        We will fight <br />
+        back.
+      </p>
+      <span>
+        © 2020 <br />
+        by Aigul, Birte, Ligita,
+        <br />
+        Seyma
+        <br />
+        <br />
+        #wildcodeschool
+      </span>
+    </footer>
   </section>
 );
 
