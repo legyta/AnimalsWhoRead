@@ -4,16 +4,17 @@ import "./stylesheets/Survey.scss";
 import frame from "./images/frame.svg";
 import NavBar from "./NavBar";
 import SideDrawer from "./SideDrawer";
+//import BackDrop from "./BackDrop";
 
 function Survey(props) {
   function submitMessage() {
     alert("You're great! Thanks for Participating!");
   }
-
   return (
     <div id="survey" className="survey-section">
-      {/* <NavBar />
-      <SideDrawer /> */}
+      <NavBar />
+      <SideDrawer />
+
       <img src={frame} alt="frame" className="frame" />
       <div className="survey-title-description">
         <div className="survey-title">

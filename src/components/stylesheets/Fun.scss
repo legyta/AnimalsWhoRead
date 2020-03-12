@@ -50,6 +50,30 @@ body {
   background-size: contain;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .arrow-fun {
+    width: 3%;
+    height: 3%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .arrow-fun {
+    width: 3%;
+    height: 3%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .arrow-fun {
+    width: 4%;
+    height: 4%;
+    margin-top: 0;
+  }
+}
+
 .all-arrows {
   display: flex;
   justify-content: center;

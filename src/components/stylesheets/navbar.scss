@@ -38,6 +38,24 @@ $border-thin: 3px;
   align-items: center;
 }
 
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//   .survey-footer {
+//     height: 20vh;
+//   }
+// }
+
+// @media screen and (min-width: 415px) and (max-width: 767px) {
+//   .survey-footer {
+//     height: 35vh;
+//   }
+// }
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .toolbar_navigation {
+    height: 16vw;
+  }
+}
+
 .toolbar_logo {
   font-weight: $medium;
   padding-left: 3%;
@@ -48,21 +66,28 @@ $border-thin: 3px;
   margin-left: 0.5rem;
 }
 
-@media screen and (max-width: 900px) {
-  .toolbar_logo {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .toolbar_logo {
-    font-size: 20px;
-  }
-}
-
 .toolbar_logo a {
   color: $pink !important;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .toolbar_logo a {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .toolbar_logo a {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .toolbar_logo a {
+    font-size: 18px;
+  }
 }
 
 .toolbar_logo {

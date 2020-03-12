@@ -1,3 +1,4 @@
+$breakpoint-tablet: 768px;
 .creators div {
   display: inline-block;
   font-size: 18pt;
@@ -103,11 +104,16 @@
   justify-content: center;
   align-items: center;
 }
+#mission {
+  background-color: #101b5f;
+  border-width: 1.25vw;
+  height: 93vh;
+}
 
 #contact .about-paws .contact-p {
   font-size: 22pt;
 }
-.contacts-page {
+#contact {
   height: 100%;
 }
 .frame--mission--contact {
@@ -136,7 +142,8 @@
   border-color: initial;
   transition: opacity 0.6s ease-out 0.6s;
 }
-#contact .about-paws h1 {
+
+h1 {
   z-index: 1000;
   background: -webkit-linear-gradient(#c6ecc7, #e57a9b);
   -webkit-background-clip: text;
@@ -202,6 +209,8 @@
   }
   #contact .about-paws h1 {
     font-size: 20pt;
+    margin-bottom: 20px;
+    margin-top: 24px;
   }
   .creators .persons {
     padding: 2px;
@@ -227,13 +236,13 @@
     opacity: 1;
   }
   .about-paws p {
-    margin-top: 80px;
+    margin-top: 40px;
   }
   .frame--mission--contact {
     width: calc(100% - 10vw);
-    height: calc(100% - 0vw);
+    height: calc(100% - 2vw);
 
-    top: 6vw;
+    top: 5vw;
     left: 5vw;
   }
   .circle--corner-contact-a {

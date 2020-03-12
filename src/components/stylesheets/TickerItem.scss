@@ -91,12 +91,41 @@ $duration: 15s;
 
   &__item {
     display: inline-block;
-
     padding: 2.4rem;
     font-size: 8rem;
     background: -webkit-linear-gradient($pink, $dark-blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ticker__item {
+    font-size: 5rem;
+  }
+
+  // .ticker-wrap {
+  //   height: 16vw;
+  // }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .ticker__item {
+    font-size: 4rem;
+  }
+
+  .ticker-wrap {
+    height: 16vw;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .ticker__item {
+    font-size: 4rem;
+  }
+
+  .ticker-wrap {
+    height: 32vw;
   }
 }
 
