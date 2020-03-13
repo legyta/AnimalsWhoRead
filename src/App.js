@@ -8,12 +8,25 @@ import Articles from "./components/Articles";
 import Mission from "./components/Mission";
 import NavBar from "./components/NavBar";
 import FooterMain from "./components/FooterMain";
+import SideDrawer from "./components/SideDrawer";
+import BackDrop from "./components/BackDrop";
 
 const API_KEY = "38c6325b37ef4200b8d0b52b8e8ab90b";
 
 class App extends Component {
   state = {
+    sideDrawerOpen: false,
     articles: []
+  };
+
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false });
   };
 
   getArticles = async e => {
@@ -33,9 +46,17 @@ class App extends Component {
   };
 
   render() {
+    let backdrop;
+
+    if (this.state.sideDrawerOpen) {
+      backdrop = <BackDrop click={this.backdropClickHandler} />;
+    }
+
     return (
-      <div className="App">
-        <NavBar />
+      <div className="App" style={{ height: "100%" }}>
+        <NavBar drawerClickHandler={this.drawerToggleClickHandler} />
+        <SideDrawer show={this.state.sideDrawerOpen} />
+        {backdrop}
         <Header />
         <Form getArticles={this.getArticles} />
         <Articles articles={this.state.articles} />

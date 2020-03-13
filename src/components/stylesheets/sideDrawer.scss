@@ -1,0 +1,68 @@
+/* COLORS */
+$red: #f72143;
+$intense-blue: #1f33f6;
+$light-green: #c6ecc7;
+$dark-blue: #101b5f;
+$light-orange: #f0a56b;
+$orange: #ad5535;
+$green: #1e8059;
+$pink: #e57a9b;
+$white: #ffffff;
+
+/* FONT FAMILY */
+$font: "Roboto";
+
+/* FONT WEIGHTS */
+$light: 300;
+$medium: 500;
+
+/* FONT SIZE */
+$h1: 15vw;
+$h2: 5vw;
+$bodytext: 1.5vw;
+$marginal: 14px;
+
+.side-drawer {
+  height: 100%;
+  background: $white;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+.side-drawer ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-drawer li {
+  margin: 0.5rem 0;
+}
+.side-drawer a {
+  color: $green;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.side-drawer a:hover,
+.side-drawer active {
+  color: $pink;
+}
+
+@media (min-width: 769px) {
+  .side-drawer {
+    display: none;
+  }
+}

@@ -1,0 +1,350 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallow rendering 1`] = `
+<div
+  className="survey-section"
+  id="survey"
+>
+  <NavBar />
+  <SideDrawer />
+  <img
+    alt="frame"
+    className="frame"
+    src="frame.svg"
+  />
+  <div
+    className="survey-title-description"
+  >
+    <div
+      className="survey-title"
+    >
+      <h1>
+        Feelings about Extinction
+      </h1>
+    </div>
+    <div
+      className="description"
+    >
+      <p
+        className="survey-p"
+      >
+        Greetings to animals sharing their feelings here
+      </p>
+    </div>
+  </div>
+  <div
+    className="survey-contact"
+  >
+    <div
+      className="survey-name"
+    >
+      <label
+        htmlFor="text"
+        id="name-label"
+      >
+        How are you called
+      </label>
+      <input
+        className="surveyContact-input"
+        id="survey-name"
+        name="name"
+        placeholder="your species name"
+        required={true}
+        type="survey-text"
+      />
+    </div>
+    <div
+      className="survey-email"
+    >
+      <label
+        htmlFor="email"
+        id="email-label"
+      >
+        What is your email
+      </label>
+      <input
+        className="surveyContact-input"
+        id="email-input"
+        name="email"
+        pattern="[^ @]*@[^ @]*"
+        placeholder="if you have one"
+        type="survey-email"
+      />
+    </div>
+    <div
+      className="survey-age"
+    >
+      <label
+        htmlFor="number"
+        id="number-label"
+      >
+        Years on the planet
+      </label>
+      <input
+        className="surveyContact-input"
+        id="number"
+        max="100"
+        min="0"
+        name="number"
+        placeholder="age"
+        type="survey-number"
+      />
+    </div>
+  </div>
+  <div
+    className="dropdown-list"
+  >
+    <label
+      className="dropdown-title"
+    >
+      How do you feel about Extinction?
+    </label>
+    <select
+      className="dropdown"
+    >
+      <option
+        value="current"
+      >
+        Choose what you relate most to
+      </option>
+      <option
+        value="first-choice"
+      >
+        I am very afraid! I already store food and think of new possible shelter.
+      </option>
+      <option
+        value="second-choice"
+      >
+        We have a plan to fight it!
+      </option>
+      <option
+        value="third-choice"
+      >
+        I am scared, but I don't care. My elders also got extincted.
+      </option>
+      <option
+        value="fourth-choice"
+      >
+        Huh? What is that? Did I sleep for too long again. Need to catch up on the news!
+      </option>
+      <option
+        value="fifth-choice"
+      >
+        Prefer not to answer.
+      </option>
+    </select>
+  </div>
+  <div
+    className="radio-list"
+  >
+    <label
+      className="radio-title"
+    >
+      Do you know how big is your species?
+    </label>
+    <div
+      className="choices"
+    >
+      <div
+        className="firstCheck"
+      >
+        <input
+          id="first"
+          name="name"
+          type="radio"
+        />
+        <label
+          htmlFor="first"
+        >
+          Only few of us left...
+        </label>
+      </div>
+      <div
+        className="secondCheck"
+      >
+        <input
+          id="second"
+          name="name"
+          type="radio"
+        />
+        <label
+          htmlFor="second"
+        >
+          I think around 736,239
+        </label>
+      </div>
+      <div
+        className="thirdCheck"
+      >
+        <input
+          id="third"
+          name="name"
+          type="radio"
+        />
+        <label
+          htmlFor="third"
+        >
+          We are the whole continent!
+        </label>
+      </div>
+      <div
+        className="fourthCheck"
+      >
+        <input
+          id="fourth"
+          name="name"
+          type="radio"
+        />
+        <label
+          htmlFor="fourth"
+        >
+          Never been good at maths...
+        </label>
+      </div>
+      <div
+        className="fifthCheck"
+      >
+        <input
+          id="fifth"
+          name="name"
+          type="radio"
+        />
+        <label
+          htmlFor="fifth"
+        >
+          I don't want to disclose this
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="checkbox-list"
+  >
+    <label
+      className="checkbox-title"
+    >
+      Do you want extinction updates?
+    </label>
+    <div
+      className="choices-checkbox"
+    >
+      <div
+        className="firstTick"
+      >
+        <input
+          className="check"
+          id="first-checkbox"
+          type="checkbox"
+          value="checkbox-1"
+        />
+        <label
+          htmlFor="first"
+        >
+          If you can you deliver to my local river!
+        </label>
+      </div>
+      <div>
+        <input
+          className="check"
+          id="second-checkbox"
+          type="checkbox"
+          value="checkbox-1"
+        />
+        <label
+          htmlFor="second"
+        >
+          Yes please, love news and updates!
+        </label>
+      </div>
+      <div>
+        <input
+          className="check"
+          id="third-checkbox"
+          type="checkbox"
+          value="checkbox-1"
+        />
+        <label
+          htmlFor="third"
+        >
+          Maybe a good idea.
+        </label>
+      </div>
+      <div>
+        <input
+          className="check"
+          id="fourth-checkbox"
+          type="checkbox"
+          value="checkbox-1"
+        />
+        <label
+          htmlFor="fourth"
+        >
+          I will probably oversleep them anyway...
+        </label>
+      </div>
+      <div>
+        <input
+          className="check"
+          id="fifth-checkbox"
+          type="checkbox"
+          value="checkbox-1"
+        />
+        <label
+          htmlFor="fifth"
+        >
+          No! I don't care.
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="comment"
+  >
+    <label
+      className="comment-title"
+    >
+      If you can actually type, leave message
+    </label>
+    <textarea
+      className="comment-text"
+      placeholder="here you can leave your comments and advices"
+    />
+  </div>
+  <button
+    className="survey-button"
+    id="submit"
+    onClick={[Function]}
+    type="submit"
+  >
+    Send your Form
+  </button>
+  <button
+    className="active-article__button"
+  >
+    <Link
+      to="/"
+    >
+      Go Home
+    </Link>
+  </button>
+  <footer
+    className="survey-footer"
+  >
+    <p>
+      We will fight 
+      <br />
+      back.
+    </p>
+    <span>
+      © 2020 
+      <br />
+      by Aigul, Birte, Ligita,
+      <br />
+      Seyma
+      <br />
+      <br />
+      #wildcodeschool
+    </span>
+  </footer>
+</div>
+`;

@@ -7,6 +7,7 @@ $light-orange: #f0a56b;
 $orange: #f85f28;
 $green: #1e8059;
 $pink: #e57a9b;
+$white: #ffffff;
 /* FONT FAMILY */
 $font: "Roboto";
 /* FONT WEIGHTS */
@@ -15,262 +16,302 @@ $medium: 500;
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
 
-.survey--img {
-  height: 20vh;
-  width: 50%;
-  margin-top: 7%;
-  margin-bottom: 7%;
+.frame {
+  height: 15%;
+  width: 15%;
+  margin: 3vw 38vw;
+  margin-top: 5%;
 }
 
-/*
-@media screen and (max-width: 768px) {
-  .survey--img {
-    height: 20vh;
-    width: 50%;
-  }
-}
-*/
-.survey-body {
+.survey-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: $dark-blue;
-  font-family: $font;
 }
 
-.title-description {
-  .title-description {
-    padding: 1rem 1rem;
-  }
-
-  .title h1 {
-    font-size: 4vw;
-    font-weight: $medium;
-    color: $light-orange !important;
-  }
-
-  p {
-    color: $pink;
-    font-weight: $medium;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
+.survey-title h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4vw;
+  margin: 1rem 0 2rem 0;
 }
 
-// Title size on Laptops
-@media screen and (min-width: 1025px) and (max-width: 1824px) {
-  .title-description .title h1 {
-    font-size: 3rem;
-  }
-
-  .description p {
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .survey-title h1 {
     font-size: 2rem;
+    margin: 0 0;
   }
 }
 
-.contact--survey {
-  .name {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .email {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .age {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  #name {
-    margin: 0 0.5rem;
-    font-size: 0.8rem;
-  }
-
-  #email-input {
-    margin: 0 0.74rem;
-    font-size: 0.8rem;
-  }
-
-  #number {
-    margin: 0 0.4rem;
-    font-size: 0.8rem;
-  }
-
-  label {
-    font-size: 0.9rem;
-    color: $light-green;
-    margin: 0 1 0;
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .survey-title h1 {
+    font-size: 1.8rem;
+    margin: 0 0;
   }
 }
 
-// Name form size on Laptops
-@media screen and (min-width: 1025px) and (max-width: 1824px) {
-  .contact label {
-    font-size: 1.2rem;
+.survey-p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2vw;
+  color: $light-orange;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .survey-p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .survey-p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .survey-p {
+    font-size: 1rem;
+  }
+}
+
+.survey-contact {
+  color: $light-orange;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.survey-name {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+}
+
+::placeholder {
+  font-size: 0.9rem;
+}
+
+.survey-email {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+}
+
+.survey-age {
+  display: flex;
+  justify-content: row;
+  align-items: center;
+}
+
+input[type="survey-text"] {
+  margin-top: 0rem;
+  padding: 0 0 0 0;
+  color: #e57a9b;
+  font-size: 1.2rem;
+}
+
+input[type="survey-number"] {
+  margin-top: 0rem;
+  padding: 0 0;
+  color: #e57a9b;
+  font-size: 1.2rem;
+}
+
+input[type="survey-email"] {
+  margin-top: 0.5rem;
+  padding: 0 0;
+  color: #e57a9b;
+  font-size: 1.2rem;
+}
+
+.surveyContact-input {
+  width: 70%;
+}
+
+#name-label {
+  width: 50%;
+  margin-right: 1rem;
+}
+
+#email-label {
+  width: 50%;
+  margin-right: 1rem;
+}
+
+#number-label {
+  width: 50%;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .surveyContact-input {
+    width: 50%;
   }
 
-  .contact #name {
+  #name-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #email-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #number-label {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .survey-contact {
+    font-size: 1.1rem;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+
+  input[type="survey-text"] {
     font-size: 1rem;
   }
 
-  .contact #email-input {
+  input[type="survey-number"] {
     font-size: 1rem;
   }
 
-  .contact #number {
+  input[type="survey-email"] {
     font-size: 1rem;
+  }
 
-    margin: 0 0.3rem;
+  .surveyContact-input {
+    width: 50%;
+  }
+
+  #name-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #email-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #number-label {
+    width: 50%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .survey-contact {
+    font-size: 1rem;
+  }
+
+  ::placeholder {
+    font-size: 0.8rem;
+  }
+
+  input[type="survey-text"] {
+    font-size: 1rem;
+  }
+
+  input[type="survey-number"] {
+    font-size: 1rem;
+  }
+
+  input[type="survey-email"] {
+    font-size: 1rem;
+  }
+
+  .surveyContact-input {
+    width: 50%;
+  }
+
+  #name-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #email-label {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  #number-label {
+    width: 50%;
+    margin-right: 0;
   }
 }
 
 .dropdown-list {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  width: 72%;
-  margin: 1rem;
+  align-items: center;
 }
 
-//Drop-down list on ipads and laptops
-@media screen and (min-width: 684px) and (max-width: 767px) {
-  .dropdown-list {
-    width: 15%;
-  }
+.dropdown-title {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.2rem;
+  color: $light-orange;
+}
+
+.dropdown {
+  width: 45%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .dropdown-list {
-    width: 25%;
+  .dropdown {
+    width: 45%;
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1824px) {
-  .dropdown-list {
-    width: 26%;
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .dropdown {
+    width: 45%;
   }
 }
 
-.dropdown-list {
-  label {
-    font-size: 1rem;
-    color: $light-green;
-  }
-
-  #dropdown {
-    font-size: 0.8rem;
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .dropdown {
+    width: 65%;
   }
 }
 
-/* Labels for dropdown list on laptops */
-
-@media screen and (min-width: 1025px) and (max-width: 1824px) {
-  .dropdown-list {
-    label {
-      font-size: 1.2rem;
-    }
-
-    #dropdown {
-      font-size: 1rem;
-    }
-  }
+.radio-title {
+  margin: 2rem 1rem 1rem 0;
+  font-size: 1.2rem;
+  color: $light-orange;
 }
 
-.radio-list {
-  #radio-title {
-    margin: 2rem;
-    color: $light-green;
-    font-size: 1rem;
-  }
-
-  .choices-radio {
-    margin: 0 2rem;
-  }
-
-  .firstCheck {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .secondCheck {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .thirdCheck {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .fourthCheck {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .fifthCheck {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+.choices {
+  color: $light-green;
 }
 
-/* Radio list on laptops */
-
-@media screen and (min-width: 1025px) and (max-width: 1824px) {
-  .radio-list {
-    #radio-title {
-      font-size: 1.2rem;
-    }
-
-    .choices {
-      font-size: 1rem;
-    }
-  }
+input {
+  width: 10%;
 }
 
-.checkbox-list {
-  #checkbox-title {
-    margin: 2rem;
-    font-size: 1.2rem;
-    color: $light-green;
-    font-size: 1rem;
-  }
-
-  .choices-checkbox {
-    margin: 0 2rem;
-    font-size: 0.8rem;
-  }
+.checkbox-title {
+  margin: 2rem 3rem 1rem 0;
+  font-size: 1.2rem;
+  color: $light-orange;
 }
 
-//Checkbox list on laptops
-@media screen and (min-width: 1025px) and (max-width: 1824px) {
-  .checkbox-list {
-    #checkbox-title {
-      font-size: 1.2rem;
-    }
-
-    .choices-checkbox {
-      font-size: 1rem;
-      margin: 0 1;
-    }
-  }
+.choices-checkbox {
+  display: flex;
+  flex-direction: column;
+  color: $light-green;
 }
 
 .comment {
@@ -279,70 +320,147 @@ $medium: 500;
   justify-content: center;
   align-items: center;
 }
+.comment-title {
+  color: $light-orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  font-size: 1.2rem;
+}
 
-#comment-title {
-  font-size: 1rem;
-  color: $light-green;
-  margin: 1.2rem;
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .comment-title {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
 }
 
 .comment-text {
   width: 80%;
-  font-size: 0.8rem;
+  margin: 0 0 2rem 0;
+  color: $pink;
+  font-size: 1.2rem;
 }
 
-//Comment title on laptops
-@media screen and (min-width: 1025px) and (max-width: 1824px) {
-  #comment-title {
-    font-size: 1.2rem;
-  }
-
+@media screen and (min-width: 375px) and (max-width: 414px) {
   .comment-text {
-    font-size: 1rem;
+    margin-bottom: 1rem;
   }
 }
-
-button {
+.survey-button {
   color: $dark-blue;
   background-color: $light-green;
-  margin: 1rem;
-  font-size: 0.8rem;
 }
 
-//button on laptops
-@media screen and (min-width: 1025px) and (max-width: 1824px) {
-  button {
-    font-size: 1rem;
-  }
-}
-
-#submit:hover {
+.survey-button:hover {
   color: $dark-blue;
   background-color: $light-orange;
 }
 
 .active-article__button {
-  margin: 0 0 1rem;
+  border-radius: 30px;
+  width: 15%;
+  margin: 0 0 2rem 0;
+  color: $white;
+  background-color: $light-orange;
+  max-height: 70px;
+  display: flex;
+  align-items: center;
+  max-width: 22em;
+  position: relative;
+  box-sizing: border-box;
+  background-color: $pink;
+  border-width: 0.7vw;
+  border-style: solid;
+  border-color: initial;
+  transition: opacity 0.6s ease-out 0.6s;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    color: $white;
+    transition: 0.5s;
+    background: linear-gradient(
+      40deg,
+      rgb(229, 122, 155) 0%,
+      rgb(240, 165, 107) 40%,
+      rgb(240, 165, 107) 60%,
+      rgb(30, 128, 89) 100%
+    );
+  }
 }
 
-/* BIRTE */
-
-.dropdown-list #dropdown {
-  font-size: 0.9rem;
-  color: $pink;
+.active-article__button a {
+  color: $dark-blue;
+  &:hover {
+    text-decoration: none;
+    color: $dark-blue;
+  }
 }
 
-.dropdown-list label {
-  font-size: 1.4rem;
-  color: #c6ecc7;
-  margin-top: 15%;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .active-article__button {
+    width: 20%;
+  }
 }
 
-label {
-  display: inline-block;
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .active-article__button {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .active-article__button {
+    width: 35%;
+    margin: 2rem 0;
+  }
+}
+
+.survey-footer {
+  background-color: $pink;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.survey-footer p {
   color: $light-green;
+  font-size: 1.3rem;
+  padding-left: 10%;
+  line-height: 1.4rem;
+  width: 50%;
+  font-weight: $medium;
 }
 
-.choices {
+.survey-footer span {
+  font-size: 0.9rem;
+  padding-left: 10%;
+  color: $dark-blue;
   width: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .survey-footer {
+    height: 18vh;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .survey-footer {
+    height: 36vh;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .survey-footer {
+    height: 18vh;
+  }
 }

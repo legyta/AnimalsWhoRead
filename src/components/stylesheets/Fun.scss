@@ -7,6 +7,8 @@ $light-orange: #f0a56b;
 $orange: #f85f28;
 $green: #1e8059;
 $pink: #e57a9b;
+$pink: #e57a9b;
+$white: #ffffff;
 /* FONT FAMILY */
 $font: "Roboto";
 /* FONT WEIGHTS */
@@ -31,27 +33,319 @@ body {
   margin: 2rem 2rem;
 }
 
-.gif {
-  padding-top: 30px;
-  padding-bottom: 70px;
-  background-color: $dark-blue;
-  margin-block-start: -1em;
-}
-
-@media screen and (max-width: 400px) and (min-width: 451px) and (max-width: 1024px) {
-  .gif {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .gif {
-    width: 100%;
-  }
-}
-
-.button-fun {
+.fun-animals {
+  color: $light-orange;
+  font-size: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
+}
+
+.arrow-fun {
+  position: relative;
+  bottom: -2rem;
+  width: 2%;
+  height: 2%;
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .arrow-fun {
+    width: 3%;
+    height: 3%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .arrow-fun {
+    width: 3%;
+    height: 3%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .arrow-fun {
+    width: 4%;
+    height: 4%;
+    margin-top: 0;
+  }
+}
+
+.all-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.arrow-fun {
+  animation: bounce 2s infinite;
+}
+.gifs {
+  border: 5px solid $light-orange;
+  width: 350px;
+  height: 300px;
+}
+.button-fun {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.frame--fun {
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-image-source: linear-gradient(
+    40deg,
+    rgb(229, 122, 155) 0%,
+    rgb(16, 27, 95) 40%,
+    rgb(16, 27, 95) 60%,
+    rgb(198, 236, 199) 100%
+  );
+  border-image-slice: 1;
+  opacity: 1;
+  border-width: 1.25vw;
+  border-style: solid;
+  border-color: initial;
+  transition: opacity 0.6s ease-out 0.6s;
+  top: 8vw;
+  left: 10vw;
+}
+.frame--fun p {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 22pt;
+}
+.col-md-4 {
+  margin-bottom: 20px;
+}
+.row {
+  margin: 5px;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .row {
+    margin-left: 10px;
+  }
+
+  .gifs {
+    border: 5px solid $light-orange;
+    width: 220px;
+    height: 190px;
+  }
+
+  .frame--fun {
+    width: calc(100% - 16vw);
+    height: calc(100% - 16vw);
+
+    top: 8vw;
+    left: 8vw;
+  }
+  .frame--fun p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18pt;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .row {
+    margin-left: 2px;
+    margin-right: 1px;
+  }
+  .header-fun h1 {
+    font-size: 3.5rem;
+  }
+  .gifs {
+    border: 5px solid $light-orange;
+    width: 170px;
+    height: 150px;
+  }
+
+  .frame--fun {
+    width: calc(100% - 16vw);
+    height: calc(100% - 16vw);
+
+    top: 8vw;
+    left: 8vw;
+  }
+  .frame--fun p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16pt;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .header-fun h1 {
+    font-size: 3.2rem;
+  }
+  .gifs {
+    border: 5px solid $light-orange;
+    width: 320px;
+    height: 280px;
+  }
+
+  .frame--fun {
+    width: calc(100% - 16vw);
+    height: calc(100% - 16vw);
+
+    top: 3vw;
+    left: 3vw;
+  }
+  .frame--fun p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14pt;
+  }
+  .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 414px) {
+  .header-fun h1 {
+    font-size: 2.4rem;
+  }
+  .gifs {
+    border: 5px solid $light-orange;
+    width: 300px;
+    height: 240px;
+  }
+
+  .frame--fun {
+    width: calc(100% - 16vw);
+    height: calc(100% - 16vw);
+    top: 3vw;
+    left: 3vw;
+  }
+  .frame--fun p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14pt;
+  }
+  .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 375px) {
+  .header-fun h1 {
+    font-size: 2rem;
+  }
+  .gifs {
+    border: 5px solid $light-orange;
+    width: 280px;
+    height: 220px;
+  }
+
+  .frame--fun {
+    width: calc(100% - 16vw);
+    height: calc(100% - 16vw);
+    top: 3vw;
+    left: 3vw;
+  }
+  .frame--fun p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14pt;
+  }
+  .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .active-article__button {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  .active-article__button {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .active-article__button {
+    width: 35%;
+    margin: 2rem 0;
+  }
+}
+
+.survey-fun {
+  background-color: $pink;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.survey-fun p {
+  color: $light-green;
+  font-size: 1.3rem;
+  padding-left: 10%;
+  line-height: 1.4rem;
+  width: 50%;
+  font-weight: $medium;
+}
+
+.survey-fun span {
+  font-size: 0.9rem;
+  padding-left: 10%;
+  color: $dark-blue;
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .fun-footer {
+    height: 18vh;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .fun-footer {
+    height: 36vh;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .fun-footer {
+    height: 18vh;
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  z-index: 0;
 }

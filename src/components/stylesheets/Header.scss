@@ -31,7 +31,6 @@ $border-thin: 3px;
 h1 {
   font-size: $h1;
   color: $white;
-  z-index: 1000;
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -267,4 +266,8 @@ main {
   .panda {
     width: 90%;
   }
+}
+
+input[type="text"] {
+  width: 25%;
 }

@@ -126,6 +126,15 @@ input {
   background-size: contain;
 }
 
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .arrow {
+    position: relative;
+    bottom: -1rem;
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .bounce {
   animation: bounce 2s infinite;
 }
