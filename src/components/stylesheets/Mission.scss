@@ -133,8 +133,33 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-.h2--mission {
+  .h2--mission {
     padding-top: 30%;
     font-size: 1.3rem;
   }
 }
+
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//   .survey-footer {
+//     height: 20vh;
+//   }
+// }
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  .h2--mission {
+    font-size: 180%;
+    padding-top: 20%;
+    padding-bottom: 0;
+  }
+
+  #mission p {
+    font-size: 3vw;
+  }
+}
+
+// @media screen and (min-width: 375px) and (max-width: 414px) {
+//   .h2--mission {
+//     padding-top: 30%;
+//     font-size: 1.3rem;
+//   }
+// }

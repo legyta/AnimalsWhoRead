@@ -323,20 +323,20 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .survey-fun {
-    height: 20vh;
+  .fun-footer {
+    height: 18vh;
   }
 }
 
 @media screen and (min-width: 415px) and (max-width: 767px) {
-  .survey-fun {
-    height: 35vh;
+  .fun-footer {
+    height: 36vh;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 414px) {
-  .survey-fun {
-    height: 20vh;
+  .fun-footer {
+    height: 18vh;
   }
 }
 
@@ -344,4 +344,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  z-index: 0;
 }

@@ -37,7 +37,6 @@ $medium: 500;
   margin: 1rem 0 2rem 0;
 }
 
-
 @media screen and (min-width: 415px) and (max-width: 768px) {
   .survey-title h1 {
     font-size: 2rem;
@@ -450,18 +449,18 @@ input {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .survey-footer {
-    height: 20vh;
+    height: 18vh;
   }
 }
 
 @media screen and (min-width: 415px) and (max-width: 767px) {
   .survey-footer {
-    height: 35vh;
+    height: 36vh;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 414px) {
   .survey-footer {
-    height: 20vh;
+    height: 18vh;
   }
 }

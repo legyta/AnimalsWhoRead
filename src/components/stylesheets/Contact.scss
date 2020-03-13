@@ -83,7 +83,8 @@ $breakpoint-tablet: 768px;
   font-family: "Roboto";
 }
 .about-paws img {
-  width: 80px;
+  width: 20%;
+  height: 20%;
 }
 .about-paws p {
   font-size: 20pt;
@@ -205,12 +206,19 @@ h1 {
     height: 100px;
   }
   #contact .about-paws .frame--mission--contact .row .contact-p {
-    font-size: 10pt;
+    font-size: 13pt;
+    margin: 0 2rem;
   }
+
+  #contact .frame--mission--contact {
+    width: calc(100% - 10vw);
+    height: 38vw;
+  }
+
   #contact .about-paws h1 {
     font-size: 20pt;
     margin-bottom: 20px;
-    margin-top: 24px;
+    margin-top: 4px;
   }
   .creators .persons {
     padding: 2px;
@@ -241,8 +249,6 @@ h1 {
   .frame--mission--contact {
     width: calc(100% - 10vw);
     height: calc(100% - 2vw);
-
-    top: 5vw;
     left: 5vw;
   }
   .circle--corner-contact-a {
@@ -256,7 +262,7 @@ h1 {
     float: right;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 414px) {
+@media screen and (min-width: 375px) and (max-width: 414px) {
   .active-article__button {
     width: 25%;
   }
@@ -266,11 +272,11 @@ h1 {
     height: 80px;
   }
   #contact .about-paws .frame--mission--contact .row .contact-p {
-    font-size: 10pt;
+    font-size: 13pt;
   }
   #contact .about-paws h1 {
     font-size: 20pt;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .creators .persons {
     padding: 2px;
@@ -286,20 +292,19 @@ h1 {
   }
   .contact-links ul li a {
     font-size: 14pt;
-
     margin: 3px;
   }
+
   .contact-links ul {
     padding-left: 0;
   }
-  .about-paws p {
-    font-size: 20pt;
-
+  #contact .about-paws p {
+    font-size: 1rem;
     display: block;
     margin-block-start: 2em;
     margin-block-end: 2em;
-    margin-inline-start: 30px;
-    margin-inline-end: 30px;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
   }
   .creators div:hover p {
     font-size: 12pt;
@@ -307,13 +312,11 @@ h1 {
     width: 300px;
   }
   .circle--corner-contact-a {
-    width: 35px;
-
+    width: 40px;
     float: left;
   }
   .circle--corner-contact-b {
     width: 35px;
-
     float: right;
   }
 }
@@ -326,9 +329,7 @@ h1 {
     width: 80px;
     height: 80px;
   }
-  #contact .about-paws .frame--mission--contact .row .contact-p {
-    font-size: 10pt;
-  }
+
   #contact .about-paws h1 {
     font-size: 20pt;
     margin-top: 40px;
@@ -353,13 +354,14 @@ h1 {
     padding-left: 0;
   }
   .about-paws p {
-    font-size: 20pt;
+    font-size: 18pt;
     display: block;
     margin-block-start: 2em;
     margin-block-end: 2em;
     margin-inline-start: 30px;
     margin-inline-end: 30px;
   }
+
   .creators div:hover p {
     font-size: 12pt;
     opacity: 1;
@@ -367,12 +369,74 @@ h1 {
   }
   .circle--corner-contact-a {
     width: 30px;
-
     float: left;
   }
   .circle--corner-contact-b {
     width: 30px;
 
+    float: right;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .frame--mission--contact {
+    width: calc(100% - 10vw);
+    height: calc(80% - 10vw);
+    left: 5vw;
+    top: 20vw;
+  }
+
+  #contact .about-paws h1 {
+    font-size: 30pt;
+    padding-top: 1rem;
+  }
+
+  #contact .about-paws .frame--mission--contact .row .contact-p {
+    font-size: 18pt;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+  #contact .about-paws .frame--mission--contact .row .contact-p {
+    font-size: 11pt;
+    margin: 0 2rem;
+  }
+
+  #contact .about-paws h1 {
+    padding-top: 10px;
+  }
+
+  .circle--corner-contact-a {
+    width: 66px;
+    float: left;
+  }
+
+  .circle--corner-contact-b {
+    width: 66px;
+    float: right;
+  }
+
+  #contact .frame--mission--contact {
+    width: calc(100% - 10vw);
+    height: 34vw;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  #contact .about-paws img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .circle--corner-contact-a {
+    width: 70px;
+    float: left;
+  }
+
+  .circle--corner-contact-b {
+    width: 70px;
     float: right;
   }
 }
