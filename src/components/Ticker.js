@@ -14,10 +14,6 @@ const texts = [
   }
 ];
 
-Array.prototype.sample = function() {
-  return this[Math.floor(Math.random() * this.length)];
-};
-
 const Ticker = () => (
   <main className="ticker-wrap w-100">
     <div className="ticker">
