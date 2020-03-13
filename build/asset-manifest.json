@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.87153eae.chunk.css",
+    "main.js": "/static/js/main.6d737297.chunk.js",
+    "main.js.map": "/static/js/main.6d737297.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4d25431e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4d25431e.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.ce6c0a50.chunk.js": "/static/js/2.ce6c0a50.chunk.js",
+    "static/js/2.ce6c0a50.chunk.js.map": "/static/js/2.ce6c0a50.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.40b8a2a3bb120cd59eda536cd48e9336.js": "/precache-manifest.40b8a2a3bb120cd59eda536cd48e9336.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.87153eae.chunk.css.map": "/static/css/main.87153eae.chunk.css.map",
+    "static/js/2.ce6c0a50.chunk.js.LICENSE.txt": "/static/js/2.ce6c0a50.chunk.js.LICENSE.txt",
+    "static/media/Form.scss": "/static/media/Arrow.478526b7.svg",
+    "static/media/Panda.svg": "/static/media/Panda.0561245c.svg",
+    "static/media/Paw.svg": "/static/media/Paw.c41c6e80.svg",
+    "static/media/animal2.gif": "/static/media/animal2.50b370c0.gif",
+    "static/media/animal3.gif": "/static/media/animal3.9d2bf483.gif",
+    "static/media/animal4.gif": "/static/media/animal4.6cf2ceb7.gif",
+    "static/media/cat.gif": "/static/media/cat.47055ec8.gif",
+    "static/media/dog.gif": "/static/media/dog.65301357.gif",
+    "static/media/dog2.gif": "/static/media/dog2.08a038b9.gif",
+    "static/media/dog3.gif": "/static/media/dog3.b8cf0757.gif",
+    "static/media/elef.gif": "/static/media/elef.29e98e79.gif",
+    "static/media/frame.svg": "/static/media/frame.f293373f.svg",
+    "static/media/giphy.gif": "/static/media/giphy.b5d2ac57.gif",
+    "static/media/octop.gif": "/static/media/octop.08a63e6b.gif",
+    "static/media/pauk.gif": "/static/media/pauk.bd16c158.gif",
+    "static/media/pig.gif": "/static/media/pig.a66a247c.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d25431e.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.ce6c0a50.chunk.js",
+    "static/css/main.87153eae.chunk.css",
+    "static/js/main.6d737297.chunk.js"
+  ]
+}
