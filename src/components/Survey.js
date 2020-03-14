@@ -223,7 +223,6 @@ class Survey extends Component {
             className="survey-button"
             type="submit"
             id="submit"
-            action="https://www.freecodecamp.com/email-submit"
           >
             Send your Form
           </button>

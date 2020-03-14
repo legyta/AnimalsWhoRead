@@ -10,7 +10,6 @@ import NavBar from "./NavBar";
 import FooterMain from "./FooterMain";
 import SideDrawer from "./SideDrawer";
 import BackDrop from "./BackDrop";
-import { Switch, Route } from "react-router-dom";
 
 const API_KEY = "38c6325b37ef4200b8d0b52b8e8ab90b";
 
