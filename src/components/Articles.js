@@ -3,7 +3,8 @@ import "./Articles.scss";
 import { Link } from "react-router-dom";
 
 const Articles = props => (
-  <div className="container">
+  <div className="container" id="articles">
+    <Link to="/articles"></Link>
     <div className="row">
       {props.articles.map(article => {
         return (
