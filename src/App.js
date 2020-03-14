@@ -8,28 +8,28 @@ import Contact from "./components/Contact";
 import Survey from "./components/Survey";
 import Fun from "./components/Fun";
 import IndexPage from "./components/IndexPage";
-//const API_KEY = "38c6325b37ef4200b8d0b52b8e8ab90b";
+const API_KEY = "38c6325b37ef4200b8d0b52b8e8ab90b";
 
 class App extends Component {
-  // state = {
-  //   articles: []
-  // };
+  state = {
+    articles: []
+  };
 
-  // getArticles = async e => {
-  //   const articleName = e.target.elements.articleName.value || "chicken";
-  //   e.preventDefault();
-  //   const api_call = await fetch(
-  //     `http://newsapi.org/v2/everything?q=${articleName}&apiKey=${API_KEY}&pageSize=20`
-  //   );
+  getArticles = async e => {
+    const articleName = e.target.elements.articleName.value || "chicken";
+    e.preventDefault();
+    const api_call = await fetch(
+      `http://newsapi.org/v2/everything?q=${articleName}&apiKey=${API_KEY}&pageSize=20`
+    );
 
-  //   const data = await api_call.json();
-  //   this.setState({ articles: data.articles });
-  // };
+    const data = await api_call.json();
+    this.setState({ articles: data.articles });
+  };
 
-  // componentDidUpdate = () => {
-  //   const articles = JSON.stringify(this.state.articles);
-  //   localStorage.setItem("articles", articles);
-  // };
+  componentDidUpdate = () => {
+    const articles = JSON.stringify(this.state.articles);
+    localStorage.setItem("articles", articles);
+  };
 
   render() {
     const App = () => (
@@ -46,7 +46,7 @@ class App extends Component {
     return (
       <Switch>
         <App />
-        <Articles />
+        <Articles articles={this.state.articles} />
         <Article />
       </Switch>
     );

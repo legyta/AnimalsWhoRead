@@ -20,20 +20,9 @@ const Articles = props => (
                 alt={article.title}
               />
               <div className="article__text">
-                <h5 className="articles__title">
-                  {article.title}
-                  {/*{article.title.length < 20
-                    ? `${article.title}`
-                  : `${article.title.substring(0, 20)}...`}*/}
-                </h5>
+                <h5 className="articles__title">{article.title}</h5>
                 <p className="articles__subtitle">
                   Stinky Human Author: {article.author}
-                  {/*<span>
-                    {article.author.length < 20
-                      ? `${article.author}`
-                      : `${article.author.substring(0, 10)}...`}
-                  </span>
-                  */}
                 </p>
               </div>
               <button className="article_buttons">
