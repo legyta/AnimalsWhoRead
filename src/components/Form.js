@@ -1,12 +1,16 @@
 import React from "react";
 import "./Form.scss";
+import { Link } from "react-router-dom";
 
 const Form = props => (
   <form
+    id="form"
     className="btn--section"
     onSubmit={props.getArticles}
     style={{ marginBottom: "2rem" }}
   >
+    {" "}
+    <Link to="/form"></Link>
     <span>
       Search Human News. <br></br>Enter Species here!
     </span>
