@@ -49,8 +49,8 @@ class App extends Component {
     return (
       <Switch>
         <App />
+        <Form getArticles={this.getArticles} />
         <Articles articles={this.state.articles} />
-        <Article />
       </Switch>
     );
   }
