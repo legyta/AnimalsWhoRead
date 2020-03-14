@@ -35,11 +35,9 @@ class Survey extends Component {
     return (
       <div id="survey" className="survey-section" style={{ height: "100%" }}>
         <Link to="/survey"></Link>
-
         <NavBar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        {/* <div id="survey" className="survey-section"> */}
         <img src={frame} alt="frame" className="frame" />
         <div className="survey-title-description">
           <div className="survey-title">
@@ -217,7 +215,6 @@ class Survey extends Component {
             placeholder="here you can leave your comments and advices"
           ></textarea>
         </div>
-
         <button
           onClick={submitMessage}
           className="survey-button"
