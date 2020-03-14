@@ -23,7 +23,7 @@ class Article extends React.Component {
   render() {
     const article = this.state.activeArticle;
     return (
-      <div className="container--article">
+      <div className="container--article" id="article">
         <NavBar />
         <div className="article--wrap">
           {this.state.activeArticle.length !== 0 && (
