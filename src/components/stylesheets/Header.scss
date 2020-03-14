@@ -89,9 +89,6 @@ main {
   top: 8vw;
   left: 8vw;
   z-index: 2;
-  // border-image-width: initial;
-  // border-image-outset: initial;
-  // border-image-repeat: initial;
   border-image-source: linear-gradient(
     40deg,
     rgb(240, 165, 107) 0%,
@@ -103,7 +100,6 @@ main {
   opacity: 1;
   border-width: 1.25vw;
   border-style: solid;
-  // border-color: initial;
   transition: opacity 0.6s ease-out 0.6s;
 }
 

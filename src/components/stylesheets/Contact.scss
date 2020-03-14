@@ -126,9 +126,6 @@ $breakpoint-tablet: 768px;
   align-items: center;
   left: 8vw;
   z-index: 2;
-  // border-image-width: initial;
-  // border-image-outset: initial;
-  // border-image-repeat: initial;
   border-image-source: linear-gradient(
     40deg,
     rgb(229, 122, 155) 0%,
@@ -140,7 +137,6 @@ $breakpoint-tablet: 768px;
   opacity: 1;
   border-width: 1.25vw;
   border-style: solid;
-  // border-color: initial;
   transition: opacity 0.6s ease-out 0.6s;
 }
 
