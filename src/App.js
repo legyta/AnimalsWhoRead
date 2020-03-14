@@ -3,6 +3,7 @@ import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from "react-router-dom";
 import Article from "./components/Article";
+import Articles from "./components/Articles";
 import Contact from "./components/Contact";
 import Survey from "./components/Survey";
 import Fun from "./components/Fun";
@@ -35,7 +36,7 @@ class App extends Component {
       <div className="App" style={{ height: "100%" }}>
         <Switch>
           <Route path exact="./home" component={IndexPage} />
-          <Route path="/article" component={Article} />
+          <Route path="/article:title" component={Article} />
           <Route path="/articles" component={Articles} />
           <Route path="/survey" component={Survey} />
           <Route path="/contact" component={Contact} />
