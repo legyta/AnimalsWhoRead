@@ -42,6 +42,7 @@ class Fun extends Component {
 
     return (
       <div className="App" style={{ height: "100%" }}>
+        <Link to="/fun"></Link>
         <NavBar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}

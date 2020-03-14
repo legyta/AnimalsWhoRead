@@ -47,7 +47,7 @@ class App extends Component {
     //   backdrop = <BackDrop click={this.backdropClickHandler} />;
     // }
 
-    return (
+    const App = () => (
       <div className="App" style={{ height: "100%" }}>
         <Switch>
           <Route path exact="./home" component={IndexPage} />
@@ -57,6 +57,11 @@ class App extends Component {
           <Route path="/fun" component={Fun} />
         </Switch>
       </div>
+    );
+    return (
+      <Switch>
+        <App />
+      </Switch>
     );
   }
 }

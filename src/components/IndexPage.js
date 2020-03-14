@@ -10,6 +10,7 @@ import NavBar from "./NavBar";
 import FooterMain from "./FooterMain";
 import SideDrawer from "./SideDrawer";
 import BackDrop from "./BackDrop";
+import { Link } from "react-router-dom";
 
 const API_KEY = "38c6325b37ef4200b8d0b52b8e8ab90b";
 
@@ -54,6 +55,7 @@ class IndexPage extends Component {
 
     return (
       <div id="home" className="App" style={{ height: "100%" }}>
+        <Link to="/home"></Link>
         <NavBar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}

@@ -32,6 +32,7 @@ class Contact extends Component {
 
     return (
       <div className="App" style={{ height: "100%" }}>
+        <Link to="/contact"></Link>
         <NavBar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
