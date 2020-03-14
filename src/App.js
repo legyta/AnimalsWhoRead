@@ -11,32 +11,32 @@ import IndexPage from "./components/IndexPage";
 const API_KEY = "38c6325b37ef4200b8d0b52b8e8ab90b";
 
 class App extends Component {
-  state = {
-    articles: []
-  };
+  // state = {
+  //   articles: []
+  // };
 
-  getArticles = async e => {
-    const articleName = e.target.elements.articleName.value || "chicken";
-    e.preventDefault();
-    const api_call = await fetch(
-      `http://newsapi.org/v2/everything?q=${articleName}&apiKey=${API_KEY}&pageSize=20`
-    );
+  // getArticles = async e => {
+  //   const articleName = e.target.elements.articleName.value || "chicken";
+  //   e.preventDefault();
+  //   const api_call = await fetch(
+  //     `http://newsapi.org/v2/everything?q=${articleName}&apiKey=${API_KEY}&pageSize=20`
+  //   );
 
-    const data = await api_call.json();
-    this.setState({ articles: data.articles });
-  };
+  //   const data = await api_call.json();
+  //   this.setState({ articles: data.articles });
+  // };
 
-  componentDidUpdate = () => {
-    const articles = JSON.stringify(this.state.articles);
-    localStorage.setItem("articles", articles);
-  };
+  // componentDidUpdate = () => {
+  //   const articles = JSON.stringify(this.state.articles);
+  //   localStorage.setItem("articles", articles);
+  // };
 
   render() {
     const App = () => (
       <div className="App" style={{ height: "100%" }}>
         <Switch>
           <Route path exact="./home" component={IndexPage} />
-          <Route path="/article:title" component={Article} />
+          <Route path="/article" component={Article} />
           <Route path="/articles" component={Articles} />
           <Route path="/survey" component={Survey} />
           <Route path="/contact" component={Contact} />
