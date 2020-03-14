@@ -51,9 +51,9 @@ section {
   top: 8vw;
   left: 8vw;
   z-index: 2;
-  border-image-width: initial;
+  /* border-image-width: initial;
   border-image-outset: initial;
-  border-image-repeat: initial;
+  border-image-repeat: initial; */
   border-image-source: linear-gradient(
     40deg,
     #f0a56b 0%,
@@ -61,11 +61,11 @@ section {
     #1e8059 60%,
     #e57a9b 100%
   );
-  border-image-slice: 1;
+  /* border-image-slice: 1; */
   opacity: 1;
   border-width: 1.25vw;
   border-style: solid;
-  border-color: initial;
+  /* border-color: initial; */
   transition: opacity 0.6s ease-out 0.6s;
 }
 .circle--corner {
