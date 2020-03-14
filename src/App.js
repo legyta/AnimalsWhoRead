@@ -37,7 +37,6 @@ class App extends Component {
         <Switch>
           <Route path exact="./home" component={IndexPage} />
           <Route path="/article" component={Article} />
-          <Route path="/articles" component={Articles} />
           <Route path="/survey" component={Survey} />
           <Route path="/contact" component={Contact} />
           <Route path="/fun" component={Fun} />
@@ -47,6 +46,8 @@ class App extends Component {
     return (
       <Switch>
         <App />
+        <Articles />
+        <Article />
       </Switch>
     );
   }
