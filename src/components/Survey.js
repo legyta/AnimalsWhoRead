@@ -11,8 +11,13 @@ function submitMessage() {
 }
 
 class Survey extends Component {
+  handleSubmitted = ({ res, fields, form }) => {
+    form.reset(); // resets "username" field to "admin"
+  };
+
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
+    input: ""
   };
 
   drawerToggleClickHandler = () => {
@@ -49,6 +54,7 @@ class Survey extends Component {
             </p>
           </div>
         </div>
+
         <div className="survey-contact">
           <div className="survey-name">
             <label htmlFor="text" id="name-label">
@@ -220,9 +226,11 @@ class Survey extends Component {
           className="survey-button"
           type="submit"
           id="submit"
+          onSubmitted={this.handleSubmitted}
         >
           Send your Form
         </button>
+
         <button className="active-article__button">
           <Link to="/">Go Home</Link>
         </button>
