@@ -1,116 +1,11 @@
-/*body {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 600 !important;
-  line-height: 1.5;
-  color: white !important;
-  text-align: left;
-  background-color: black !important;
-  font-family: "Montserrat" !important;
-}
-
-.App-logo {
-  height: 60vh;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 10s linear;
-  }
-}
-
-.App-header {
-  background: #000000;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.App {
-  background-color: black;
-}
-
-.App h1 {
-  font-size: 9vw;
-  font-family: "Montserrat";
-  max-width: 50%;
-  font-weight: 900;
-}
-
-.App h2 {
-  font-size: 4vw;
-  padding-top: 4vw;
-  font-family: "Montserrat";
-}
-
-.container {
-  padding-top: 7vw;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-*/
-// Articles
-/*
-body {
-  background-color: black;
-}
-html {
-  background-color: black;
-}
-
-img {
-  width: 100%;
-  height: 220px;
-}
-
-a {
-  color: #c6ecc7 !important;
-}
-
-a:hover {
-  color: black;
-}
-*/
 button:focus {
   outline: none;
-}
-/*
-.App {
-  text-align: center;
-}
-/*
-.App-header {
-  background-color: #ff0055;
-  height: 90px;
-  padding: 30px;
-  color: white;
-  margin-bottom: 2rem;
 }
 
 .App-title {
   font-size: 1.5em;
 }
-*/
+
 .article_buttons {
   border: solid 2px #c6ecc7;
   background: transparent;
