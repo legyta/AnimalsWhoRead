@@ -24,7 +24,12 @@ class Article extends React.Component {
     const article = this.state.activeArticle;
     return (
       <div className="container--article" id="article">
-        <Link to="/article"></Link>
+        <Link
+          to={{
+            pathname: `/article/${article.title}`,
+            state: { article: article.title }
+          }}
+        ></Link>
         <NavBar />
         <div className="article--wrap">
           {this.state.activeArticle.length !== 0 && (
