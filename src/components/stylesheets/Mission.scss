@@ -49,9 +49,9 @@ $border-thin: 3px;
   align-items: center;
   left: 8vw;
   z-index: 2;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
+  // border-image-width: initial;
+  // border-image-outset: initial;
+  // border-image-repeat: initial;
   border-image-source: linear-gradient(
     40deg,
     rgb(229, 122, 155) 0%,
@@ -63,7 +63,7 @@ $border-thin: 3px;
   opacity: 1;
   border-width: 1.25vw;
   border-style: solid;
-  border-color: initial;
+  // border-color: initial;
   transition: opacity 0.6s ease-out 0.6s;
 }
 
@@ -139,12 +139,6 @@ body {
   }
 }
 
-// @media screen and (min-width: 768px) and (max-width: 1024px) {
-//   .survey-footer {
-//     height: 20vh;
-//   }
-// }
-
 @media screen and (min-width: 415px) and (max-width: 767px) {
   .h2--mission {
     font-size: 180%;
@@ -156,10 +150,3 @@ body {
     font-size: 3vw;
   }
 }
-
-// @media screen and (min-width: 375px) and (max-width: 414px) {
-//   .h2--mission {
-//     padding-top: 30%;
-//     font-size: 1.3rem;
-//   }
-// }
