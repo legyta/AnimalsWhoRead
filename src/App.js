@@ -35,7 +35,8 @@ class App extends Component {
       <div className="App" style={{ height: "100%" }}>
         <Switch>
           <Route path exact="./home" component={IndexPage} />
-          <Route path="/article/:title" component={Article} />
+          <Route path="/article" component={Article} />
+          <Route path="/articles" component={Articles} />
           <Route path="/survey" component={Survey} />
           <Route path="/contact" component={Contact} />
           <Route path="/fun" component={Fun} />
