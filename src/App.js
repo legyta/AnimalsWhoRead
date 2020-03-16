@@ -38,7 +38,7 @@ class App extends Component {
       <div className="App" style={{ height: "100%" }}>
         <Switch>
           <Route path exact="./home" component={IndexPage} />
-          <Route path="./article" component={Article} />
+          <Route path="/article/:title" component={Article} />
           <Route path="/survey" component={Survey} />
           <Route path="/contact" component={Contact} />
           <Route path="/fun" component={Fun} />
@@ -48,8 +48,6 @@ class App extends Component {
     return (
       <Switch>
         <App />
-        <Form getArticles={this.getArticles} />
-        <Articles articles={this.state.articles} />
       </Switch>
     );
   }
