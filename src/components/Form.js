@@ -12,9 +12,7 @@ const Form = props => (
     </span>
     <div className="arrow bounce"></div>
     <input className="form__input" type="text" name="articleName" />
-    <button className="btn" onSubmit={props.getArticles}>
-      Check it out!
-    </button>
+    <button className="btn">Check it out!</button>
   </form>
 );
 

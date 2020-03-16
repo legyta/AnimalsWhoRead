@@ -13,7 +13,7 @@ class Article extends React.Component {
   componentDidMount = async () => {
     const title = this.props.location.state.article;
     const req = await fetch(
-      `http://newsapi.org/v2/everything?q=${title}&apiKey=${API_KEY}`
+      `https://newsapi.org/v2/everything?q=${title}&apiKey=${API_KEY}`
     );
 
     const res = await req.json();
