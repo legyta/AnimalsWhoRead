@@ -3,12 +3,10 @@ import "./App.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from "react-router-dom";
 import Article from "./components/Article";
-import Articles from "./components/Articles";
 import Contact from "./components/Contact";
 import Survey from "./components/Survey";
 import Fun from "./components/Fun";
 import IndexPage from "./components/IndexPage";
-import Form from "./components/Form";
 
 const API_KEY = "38c6325b37ef4200b8d0b52b8e8ab90b";
 
