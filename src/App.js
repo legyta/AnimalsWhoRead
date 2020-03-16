@@ -19,7 +19,7 @@ class App extends Component {
     const articleName = e.target.elements.articleName.value || "chicken";
     e.preventDefault();
     const api_call = await fetch(
-      `http://newsapi.org/v2/everything?q=${articleName}&apiKey=${API_KEY}&pageSize=20`
+      `https://newsapi.org/v2/everything?q=${articleName}&apiKey=${API_KEY}&pageSize=20`
     );
 
     const data = await api_call.json();
