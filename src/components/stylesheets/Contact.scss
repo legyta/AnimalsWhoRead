@@ -436,3 +436,30 @@ h1 {
     float: right;
   }
 }
+
+@media screen and (max-width: 374px) {
+  .button-contact-group .active-article__button {
+    width: 31%;
+    margin-top: 3rem;
+  }
+
+  #contact .about-paws .contact-p {
+    font-size: 12pt;
+  }
+
+  #contact .about-paws h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 0;
+  }
+
+  .circle--corner-contact-a {
+    width: 50px;
+    float: left;
+  }
+
+  .circle--corner-contact-b {
+    width: 50px;
+    float: right;
+  }
+}

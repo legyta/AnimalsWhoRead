@@ -38,18 +38,6 @@ $border-thin: 3px;
   align-items: center;
 }
 
-// @media screen and (min-width: 768px) and (max-width: 1024px) {
-//   .survey-footer {
-//     height: 20vh;
-//   }
-// }
-
-// @media screen and (min-width: 415px) and (max-width: 767px) {
-//   .survey-footer {
-//     height: 35vh;
-//   }
-// }
-
 @media screen and (min-width: 375px) and (max-width: 414px) {
   .toolbar_navigation {
     height: 16vw;
@@ -87,6 +75,16 @@ $border-thin: 3px;
 @media screen and (min-width: 375px) and (max-width: 414px) {
   .toolbar_logo a {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .toolbar_logo a {
+    font-size: 18px;
+  }
+
+  .toolbar_navigation {
+    height: 14vw;
   }
 }
 
